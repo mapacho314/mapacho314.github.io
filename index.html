@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dr. Mariana Vázquez Pacho, PhD | Estrategia & Sostenibilidad</title>
-  <meta name="description" content="Doctora en Ciencias de Gestión y Estrategia de Negocios. Más de 12 años integrando innovación en modelos de negocio sostenibles (ESG/ODS) y liderazgo comercial en consumo masivo (FMCG).">
-  <meta name="keywords" content="Mariana Vazquez Pacho, PhD, Estrategia, Sostenibilidad, ESG, SDGs, ODS, FMCG, Modelos de Negocio, Base de la Pirámide, Mondelēz, Bimbo">
+  <title data-i18n="metaTitle">Dr. Mariana Vázquez Pacho, PhD | Estrategia & Sostenibilidad</title>
+  <meta name="description" data-i18n="metaDesc" content="Doctora en Ciencias de Gestión y Consultora Estratégica. Más de 12 años integrando innovación en modelos de negocio sostenibles (ESG/ODS) y liderazgo comercial FMCG.">
+  <meta name="keywords" content="Mariana Vazquez Pacho, PhD, Estrategia, Sostenibilidad, ESG, SDGs, ODS, FMCG, Modelos de Negocio, Base de la Pirámide, Mondelēz, Bimbo, Bepensa">
   <meta name="author" content="Dr. Mariana Vázquez Pacho">
 
   <!-- Open Graph / Meta -->
@@ -36,20 +36,28 @@
       </a>
 
       <nav class="nav-menu" id="navMenu">
-        <a href="#about" class="nav-link" id="navAbout">Perfil</a>
-        <a href="#pillars" class="nav-link" id="navPillars">Enfoque</a>
-        <a href="#experience" class="nav-link" id="navExp">Trayectoria</a>
-        <a href="#publications" class="nav-link" id="navPubs">Investigación</a>
-        <a href="#skills" class="nav-link" id="navSkills">Competencias</a>
-        <a href="#education" class="nav-link" id="navEdu">Educación</a>
+        <a href="#about" class="nav-link" id="navAbout" data-i18n="navProfile">Perfil</a>
+        <a href="#pillars" class="nav-link" id="navPillars" data-i18n="navApproach">Enfoque</a>
+        <a href="#experience" class="nav-link" id="navExp" data-i18n="navExperience">Trayectoria</a>
+        <a href="#publications" class="nav-link" id="navPubs" data-i18n="navPublications">Investigación</a>
+        <a href="#skills" class="nav-link" id="navSkills" data-i18n="navSkills">Competencias</a>
+        <a href="#education" class="nav-link" id="navEdu" data-i18n="navEducation">Educación</a>
       </nav>
 
       <div class="nav-actions">
+        <!-- Language Switcher Toggle -->
+        <button class="lang-toggle-btn" id="langToggle" aria-label="Cambiar idioma / Switch language" title="Switch to English">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-label" id="langLabel">EN</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
         <button class="theme-toggle-btn" id="themeToggle" aria-label="Cambiar tema claro/oscuro" title="Cambiar Tema (Claro / Oscuro)">
           <span class="theme-icon" id="themeIcon">☀️</span>
         </button>
+
         <a href="Profile.pdf" download class="btn btn-outline btn-sm" id="btnDownloadCvNav">
-          <span>Descargar CV</span>
+          <span data-i18n="btnDownloadCv">Descargar CV</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
         </a>
       </div>
@@ -63,18 +71,18 @@
         
         <div class="hero-header-badge">
           <span class="status-indicator"></span>
-          <span class="status-text">Disponible para Asesoría Estratégica & Dirección Corporativa</span>
+          <span class="status-text" data-i18n="heroStatus">Disponible para Asesoría Estratégica & Dirección Corporativa</span>
         </div>
 
-        <h1 class="hero-title">
+        <h1 class="hero-title" data-i18n="heroTitle">
           Dr. Mariana Vázquez Pacho
         </h1>
 
-        <p class="hero-subtitle">
-          <span class="highlight-text">Estrategia & Sostenibilidad</span> • Modelos de Negocio ESG • Liderazgo Comercial FMCG
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          Estrategia & Sostenibilidad • Modelos de Negocio ESG • Liderazgo Comercial FMCG
         </p>
 
-        <p class="hero-location">
+        <p class="hero-location" data-i18n="heroLocation">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
           Colombia / México / Francia (Alcance Global & Asesoría Ejecutiva)
         </p>
@@ -82,44 +90,46 @@
         <!-- Executive Summary Box -->
         <div class="hero-summary-box" id="about">
           <div class="summary-highlight-border"></div>
-          <p class="summary-text">
-            Doctora en Ciencias de Gestión con formación en Contaduría Pública y Marketing Internacional. 
-            Cuento con <strong>más de 12 años de experiencia combinada</strong>: <strong>7 años de liderazgo comercial</strong> en empresas multinacionales de consumo masivo (FMCG: Mondelēz International, Grupo Bimbo, Bepensa) y <strong>5 años de investigación científica</strong> en Lyon, Francia, integrando marcos globales de sostenibilidad (ESG / ODS) y creación de valor compartido al diseño de modelos de negocio rentables y escalables.
+          <p class="summary-text" data-i18n="heroSummary">
+            Doctora en Ciencias de Gestión con formación en Contaduría Pública y Marketing Internacional. Cuento con <strong>más de 12 años de experiencia combinada</strong>: <strong>7 años de liderazgo comercial</strong> en empresas multinacionales de consumo masivo (FMCG: Mondelēz International, Grupo Bimbo, Bepensa) y <strong>5 años de investigación científica</strong> en Lyon, Francia, integrando marcos globales de sostenibilidad (ESG / ODS) y creación de valor compartido al diseño de modelos de negocio rentables y escalables.
           </p>
         </div>
 
         <!-- Impact Metrics Grid -->
         <div class="metrics-grid">
           <div class="metric-card">
-            <span class="metric-value">12+</span>
-            <span class="metric-label">Años de Trayectoria (FMCG + Doctorado)</span>
+            <span class="metric-value" data-i18n="metric1Val">12+</span>
+            <span class="metric-label" data-i18n="metric1Label">Años de Trayectoria (FMCG + Doctorado)</span>
           </div>
           <div class="metric-card">
-            <span class="metric-value">+20%</span>
-            <span class="metric-label">Crecimiento en Ventas en Cuentas Estratégicas</span>
+            <span class="metric-value" data-i18n="metric2Val">+20%</span>
+            <span class="metric-label" data-i18n="metric2Label">Crecimiento en Ventas en Cuentas Estratégicas</span>
           </div>
           <div class="metric-card">
-            <span class="metric-value">5+</span>
-            <span class="metric-label">Años de Investigación Sostenible en Europa</span>
+            <span class="metric-value" data-i18n="metric3Val">5+</span>
+            <span class="metric-label" data-i18n="metric3Label">Años de Investigación Sostenible en Europa</span>
           </div>
           <div class="metric-card">
-            <span class="metric-value">3</span>
-            <span class="metric-label">Idiomas Profesionales (ES, EN, FR)</span>
+            <span class="metric-value" data-i18n="metric4Val">3</span>
+            <span class="metric-label" data-i18n="metric4Label">Idiomas Profesionales (ES, EN, FR)</span>
           </div>
         </div>
 
         <!-- Hero Actions -->
         <div class="hero-actions">
-          <a href="mailto:marianapacho@gmail.com" class="btn btn-primary" id="btnHeroContact">
-            <span>Iniciar Conversación</span>
+          <a href="mailto:mariana.vazquezpacho@gmail.com" class="btn btn-primary" id="btnHeroContact">
+            <span data-i18n="btnHeroContact">Iniciar Conversación</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
           </a>
           <a href="Profile.pdf" download class="btn btn-secondary" id="btnHeroResume">
-            <span>Descargar CV Completo (PDF)</span>
+            <span data-i18n="btnHeroCv">Descargar CV Completo (PDF)</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           </a>
           <a href="https://www.linkedin.com/in/mariana-vazquez-pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile" id="btnLinkedIn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"/></svg>
+          </a>
+          <a href="https://www.researchgate.net/profile/Mariana-Vazquez-Pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="ResearchGate Profile" id="btnResearchGate">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.08.455c-.03.205-.045.388-.045.545 0 .285.038.563.112.833.076.27.18.517.316.742a3.86 3.86 0 0 0 .502.66c.203.21.435.39.697.538-.525.435-1.028.9-1.508 1.395-.48.495-.915 1.02-1.305 1.575a13.3 13.3 0 0 0-1.043 1.688 15.355 15.355 0 0 0-.75 1.748c-.69-.975-1.395-1.89-2.115-2.745-.72-.855-1.463-1.62-2.228-2.295a18.24 18.24 0 0 0-2.43-1.74A12.72 12.72 0 0 0 3.75 6.72c-.885-.3-1.77-.45-2.655-.45H0v17.73h4.35v-6.93h.645l4.89 6.93h5.43l-5.61-7.74c.915-.99 1.83-2.025 2.745-3.105.915-1.08 1.77-2.205 2.565-3.375.465.3.945.555 1.44.765.495.21 1.005.315 1.53.315 1.05 0 1.95-.345 2.7-1.035.75-.69 1.125-1.59 1.125-2.7 0-1.11-.375-2.01-1.125-2.7-.75-.69-1.65-1.035-2.7-1.035zM4.35 13.41H3.6v-3.75h.75c.675 0 1.23.21 1.665.63.435.42.66.96.66 1.62 0 .42-.105.78-.315 1.08-.21.3-.495.54-.855.72-.36.18-.765.27-1.215.27zm15.236-9.525c.345.345.525.765.525 1.26 0 .495-.18.915-.525 1.26-.345.345-.765.525-1.26.525-.495 0-.915-.18-1.26-.525-.345-.345-.525-.765-.525-1.26 0-.495.18-.915.525-1.26.345-.345.765-.525 1.26-.525.495 0 .915.18 1.26.525z"/></svg>
           </a>
           <a href="https://github.com/mapacho314" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile" id="btnGitHub">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
@@ -134,9 +144,9 @@
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Pilares Estratégicos</span>
-          <h2 class="section-title">Enfoque & Propuesta de Valor</h2>
-          <p class="section-desc">
+          <span class="section-tag" data-i18n="pillarsTag">Pilares Estratégicos</span>
+          <h2 class="section-title" data-i18n="pillarsTitle">Enfoque & Propuesta de Valor</h2>
+          <p class="section-desc" data-i18n="pillarsDesc">
             Integración holística entre rigor científico, marcos de sostenibilidad de vanguardia y ejecución comercial orientada a resultados financieros.
           </p>
         </div>
@@ -145,32 +155,32 @@
           
           <div class="pillar-card card">
             <div class="pillar-icon">🌱</div>
-            <h3 class="pillar-title">Modelos de Negocio ESG & Sostenibilidad</h3>
-            <p class="pillar-text">
+            <h3 class="pillar-title" data-i18n="pillar1Title">Modelos de Negocio ESG & Sostenibilidad</h3>
+            <p class="pillar-text" data-i18n="pillar1Text">
               Diseño y operacionalización de modelos de negocio que integran criterios ambientales, sociales y de gobernanza (ESG) y Objetivos de Desarrollo Sostenible (ODS), transformando la sostenibilidad en una ventaja competitiva rentable.
             </p>
           </div>
 
           <div class="pillar-card card">
             <div class="pillar-icon">🤝</div>
-            <h3 class="pillar-title">Valor Compartido & Base de la Pirámide (BoP)</h3>
-            <p class="pillar-text">
-              Estrategias de co-creación y colaboración con ecosistemas y comunidades de mercados emergentes, articulando redes de valor inclusivas que generan desarrollo social e impacto económico mutuo.
+            <h3 class="pillar-title" data-i18n="pillar2Title">Valor Compartido & Base de la Pirámide (BoP)</h3>
+            <p class="pillar-text" data-i18n="pillar2Text">
+              Estrategias de co-creación y colaboración con ecosistemas y comunidades en mercados emergentes, articulando redes de valor inclusivas que generan desarrollo social e impacto económico mutuo.
             </p>
           </div>
 
           <div class="pillar-card card">
             <div class="pillar-icon">📊</div>
-            <h3 class="pillar-title">Liderazgo Comercial & Cuentas Clave (FMCG)</h3>
-            <p class="pillar-text">
+            <h3 class="pillar-title" data-i18n="pillar3Title">Liderazgo Comercial & Cuentas Clave (FMCG)</h3>
+            <p class="pillar-text" data-i18n="pillar3Text">
               Sólida trayectoria en negociación con grandes cadenas mayoristas y retail, optimización de sell-in/sell-out, gestión de presupuestos con ROI positivo, rotación de cartera (DSO) y lanzamientos de productos de alta rotación.
             </p>
           </div>
 
           <div class="pillar-card card">
             <div class="pillar-icon">🔍</div>
-            <h3 class="pillar-title">Investigación & Métodos Analíticos Rigurosos</h3>
-            <p class="pillar-text">
+            <h3 class="pillar-title" data-i18n="pillar4Title">Investigación & Métodos Analíticos Rigurosos</h3>
+            <p class="pillar-text" data-i18n="pillar4Text">
               Capacidad demostrada en análisis cualitativo y comparativo (metodología de Morse), mapeo de cadenas de suministro y valor, análisis financiero y divulgación en conferencias académicas internacionales.
             </p>
           </div>
@@ -185,20 +195,20 @@
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Experiencia Profesional</span>
-          <h2 class="section-title">Trayectoria Ejecutiva & Científica</h2>
-          <p class="section-desc">
+          <span class="section-tag" data-i18n="expTag">Experiencia Profesional</span>
+          <h2 class="section-title" data-i18n="expTitle">Trayectoria Ejecutiva & Científica</h2>
+          <p class="section-desc" data-i18n="expDesc">
             Equilibrio estratégico entre investigación doctoral en Europa y liderazgo comercial en corporaciones multinacionales líderes.
           </p>
         </div>
 
         <!-- Filter Controls -->
         <div class="filter-wrapper">
-          <span class="filter-label">Ver por área:</span>
+          <span class="filter-label" id="filterLabel">Filtro:</span>
           <div class="filter-buttons" role="tablist">
-            <button class="filter-btn active" data-filter="all" id="filterAll">Todas las posiciones (4)</button>
-            <button class="filter-btn" data-filter="research" id="filterResearch">Investigación Doctoral & ESG</button>
-            <button class="filter-btn" data-filter="commercial" id="filterCommercial">Liderazgo Comercial FMCG</button>
+            <button class="filter-btn active" data-filter="all" id="filterAll" data-i18n="filterAll">Todas las posiciones (4)</button>
+            <button class="filter-btn" data-filter="research" id="filterResearch" data-i18n="filterResearch">Investigación Doctoral & ESG</button>
+            <button class="filter-btn" data-filter="commercial" id="filterCommercial" data-i18n="filterCommercial">Liderazgo Comercial FMCG</button>
           </div>
         </div>
 
@@ -210,41 +220,41 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
               <div class="card-meta">
-                <span class="badge badge-research">Investigación Doctoral & Estrategia</span>
-                <span class="period">Enero 2019 — Abril 2024 (5 años 4 meses)</span>
+                <span class="badge badge-research" data-i18n="role1Badge">Investigación Doctoral & Estrategia</span>
+                <span class="period" data-i18n="role1Period">Enero 2019 — Abril 2024 (5 años 4 meses)</span>
               </div>
-              <h3 class="role-title">PhD Researcher in Strategy & Sustainability</h3>
+              <h3 class="role-title" data-i18n="role1Title">PhD Researcher in Strategy & Sustainability</h3>
               <h4 class="company-name">
-                <span>Magellan Laboratory — Université Jean Moulin Lyon 3</span>
-                <span class="location-tag">📍 Lyon, Francia</span>
+                <span data-i18n="role1Company">Magellan Laboratory — Université Jean Moulin Lyon 3</span>
+                <span class="location-tag" data-i18n="role1Location">📍 Lyon, Francia</span>
               </h4>
 
-              <p class="role-summary">
+              <p class="role-summary" data-i18n="role1Summary">
                 Liderazgo de investigación doctoral enfocada en la sostenibilidad y el diseño e innovación de modelos de negocio, ayudando a las empresas a formular estrategias y tácticas para crear valor social de manera rentable en mercados emergentes y contextos de la base de la pirámide (BoP).
               </p>
 
               <ul class="impact-list">
-                <li>
-                  <strong>Frameworks ESG & ODS:</strong> Comprensión exhaustiva de marcos globales de sostenibilidad (ESG, ODS) y enfoques de mercado para el desarrollo social, complementado con el dominio de los elementos operacionales del modelo de negocio (propuesta de valor, cadena de valor, red de valor, segmentos de clientes, captura de valor y estructura de costos).
+                <li data-i18n="role1Bullet1">
+                  <strong>Frameworks ESG & ODS:</strong> Comprensión exhaustiva de marcos globales de sostenibilidad (ESG, ODS) y operacionalización de modelos de negocio (propuesta de valor, cadena de suministro, red de valor, segmentos de clientes, flujos de ingresos y estructura de costos).
                 </li>
-                <li>
-                  <strong>Estrategias de Multinacionales:</strong> Análisis a profundidad de las estrategias y tácticas que utilizan las corporaciones multinacionales (MNCs) para crear valor sostenible, apoyando los procesos de planeación estratégica.
+                <li data-i18n="role1Bullet2">
+                  <strong>Estrategias de Multinacionales:</strong> Análisis a profundidad de estrategias y tácticas de corporaciones multinacionales (MNCs) para innovar y crear valor compartido alineado con tendencias globales de sostenibilidad.
                 </li>
-                <li>
-                  <strong>Mecanismos de Colaboración:</strong> Revelación de mecanismos de colaboración de redes globales para la creación mutua de valor sostenible.
+                <li data-i18n="role1Bullet3">
+                  <strong>Redes Colaborativas:</strong> Exploración de esquemas de colaboración dentro de multinacionales para optimizar cadenas de valor mediante alianzas con ONGs, sociedad civil y gobiernos.
                 </li>
-                <li>
-                  <strong>Conferencias Internacionales:</strong> Presentación y discusión de hallazgos de investigación en 2 conferencias científicas internacionales sobre modelos de negocio y creación de valor compartido.
+                <li data-i18n="role1Bullet4">
+                  <strong>Conferencias Internacionales:</strong> Presentación y divulgación de hallazgos de investigación en conferencias científicas internacionales sobre modelos de negocio y valor compartido.
                 </li>
               </ul>
 
               <div class="tech-tags">
-                <span class="tag">Innovación en Modelos de Negocio</span>
-                <span class="tag">ESG</span>
-                <span class="tag">ODS / SDGs</span>
+                <span class="tag">Business Model Innovation</span>
+                <span class="tag">ESG Frameworks</span>
+                <span class="tag">SDGs / ODS</span>
                 <span class="tag">Base of Pyramid (BoP)</span>
-                <span class="tag">Planeación Estratégica</span>
-                <span class="tag">Metodología de Morse</span>
+                <span class="tag">Strategic Planning</span>
+                <span class="tag">Morse Methodology</span>
               </div>
             </div>
           </div>
@@ -254,40 +264,40 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
               <div class="card-meta">
-                <span class="badge badge-commercial">Consumo Masivo (FMCG)</span>
-                <span class="period">Octubre 2017 — Diciembre 2018 (1 año 3 meses)</span>
+                <span class="badge badge-commercial" data-i18n="role2Badge">Consumo Masivo (FMCG)</span>
+                <span class="period" data-i18n="role2Period">Septiembre 2017 — Diciembre 2018 (1 año 4 meses)</span>
               </div>
-              <h3 class="role-title">Key Account Executive (Canal Mayorista)</h3>
+              <h3 class="role-title" data-i18n="role2Title">Key Account Executive (Canal Mayorista)</h3>
               <h4 class="company-name">
-                <span>Mondelēz International</span>
-                <span class="location-tag">📍 Mérida, Yucatán, México</span>
+                <span data-i18n="role2Company">Mondelēz International</span>
+                <span class="location-tag" data-i18n="role2Location">📍 Mérida, Yucatán, México</span>
               </h4>
 
-              <p class="role-summary">
+              <p class="role-summary" data-i18n="role2Summary">
                 Liderazgo en planeación estratégica y gestión de relaciones comerciales para dos clientes clave en el canal mayorista del sur de México, generando un crecimiento significativo del negocio.
               </p>
 
               <ul class="impact-list">
-                <li>
-                  <strong>Superación Consistente de Cuotas:</strong> Crecimiento del <strong>10%</strong> en <em>sell-in</em> y <em>sell-out</em>, superando la cuota de ventas en 10 de 12 meses.
+                <li data-i18n="role2Bullet1">
+                  <strong>Superación Consistente de Cuotas:</strong> Crecimiento del <strong>10%</strong> en sell-in y sell-out, superando la cuota de ventas en 10 de 12 meses.
                 </li>
-                <li>
-                  <strong>Gestión de Stakeholders Clave:</strong> Fortalecimiento de relaciones con socios estratégicos, optimizando el entendimiento de la dinámica de mercado, preferencias del consumidor y panorama competitivo.
+                <li data-i18n="role2Bullet2">
+                  <strong>Gestión de Stakeholders Clave:</strong> Fortalecimiento de relaciones estratégicas con toma de decisiones de alto nivel basada en dinámicas de mercado y tendencias competitivas.
                 </li>
-                <li>
-                  <strong>Innovación y Portafolio:</strong> Introducción anual de <strong>12+ nuevos productos</strong>, optimizando el catálogo de categorías según la demanda del mercado.
+                <li data-i18n="role2Bullet3">
+                  <strong>Innovación y Portafolio:</strong> Introducción anual de <strong>12+ productos innovadores</strong>, adaptando el portafolio a la demanda del mercado.
                 </li>
-                <li>
-                  <strong>Casos de Negocio Persuasivos:</strong> Elaboración de <em>business cases</em> para la alta dirección de clientes clave, asegurando adopción estratégica y mejorando la experiencia comercial.
+                <li data-i18n="role2Bullet4">
+                  <strong>Casos de Negocio Persuasivos:</strong> Creación de business cases ejecutivos que aseguraron la adopción de soluciones y optimizaron el rendimiento comercial.
                 </li>
               </ul>
 
               <div class="tech-tags">
                 <span class="tag">Key Account Management</span>
-                <span class="tag">Canal Mayorista</span>
+                <span class="tag">Wholesale Channel</span>
                 <span class="tag">Sell-in & Sell-out</span>
-                <span class="tag">Optimización de Portafolio</span>
-                <span class="tag">Relación con Stakeholders</span>
+                <span class="tag">Portfolio Optimization</span>
+                <span class="tag">Stakeholder Management</span>
               </div>
             </div>
           </div>
@@ -297,37 +307,37 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
               <div class="card-meta">
-                <span class="badge badge-commercial">B2B Industrial</span>
-                <span class="period">Septiembre 2016 — Febrero 2017 (6 meses)</span>
+                <span class="badge badge-commercial" data-i18n="role3Badge">B2B Industrial</span>
+                <span class="period" data-i18n="role3Period">Septiembre 2016 — Enero 2017 (5 meses)</span>
               </div>
-              <h3 class="role-title">Sales Manager (Sur de México y Centroamérica)</h3>
+              <h3 class="role-title" data-i18n="role3Title">Sales Manager (Sur de México y Centroamérica)</h3>
               <h4 class="company-name">
-                <span>Bepensa Industrial (MegaEmpack)</span>
-                <span class="location-tag">📍 Mérida, Yucatán, México</span>
+                <span data-i18n="role3Company">MegaEmpack (Bepensa Industrial)</span>
+                <span class="location-tag" data-i18n="role3Location">📍 Mérida, Yucatán, México</span>
               </h4>
 
-              <p class="role-summary">
-                Supervisión del desarrollo de negocios en territorios asignados, diseñando e implementando exitosas estrategias de expansión comercial en el sur de México y Centroamérica.
+              <p class="role-summary" data-i18n="role3Summary">
+                Liderazgo del desarrollo de negocios en diversos territorios, formulando y ejecutando estrategias de crecimiento comercial adaptadas a tendencias regionales.
               </p>
 
               <ul class="impact-list">
-                <li>
-                  <strong>Crecimiento en Ventas (+20%):</strong> Incremento del <strong>20% en ventas</strong> mediante la ejecución de estrategias comerciales hechas a la medida y superación de cuotas.
+                <li data-i18n="role3Bullet1">
+                  <strong>Crecimiento en Ventas (+20%):</strong> Consecución de un notable incremento del <strong>20% en ventas</strong> mediante estrategias basadas en analítica de mercado.
                 </li>
-                <li>
-                  <strong>Recuperación y Expansión de Cuentas:</strong> Recuperación de 2 clientes clave, renovación de un contrato vital de arrendamiento e incorporación de nuevos clientes PyME.
+                <li data-i18n="role3Bullet2">
+                  <strong>Recuperación y Expansión de Cuentas:</strong> Recuperación de clientes clave e incorporación de nuevas cuentas PyME, impulsando los ingresos.
                 </li>
-                <li>
-                  <strong>Colaboración Interdepartamental:</strong> Liderazgo transversal entre departamentos para atender requerimientos técnicos y resolver retos de negocio de los clientes.
+                <li data-i18n="role3Bullet3">
+                  <strong>Colaboración Transversal:</strong> Liderazgo interdisciplinario para atender solicitudes técnicas de clientes y resolver desafíos comerciales complejos.
                 </li>
               </ul>
 
               <div class="tech-tags">
-                <span class="tag">Ventas B2B</span>
-                <span class="tag">Expansión de Mercados</span>
-                <span class="tag">Centroamérica</span>
-                <span class="tag">Negociación de Contratos</span>
-                <span class="tag">Recuperación de Cuentas</span>
+                <span class="tag">B2B Sales</span>
+                <span class="tag">Market Expansion</span>
+                <span class="tag">Central America</span>
+                <span class="tag">Contract Negotiation</span>
+                <span class="tag">Client Recovery</span>
               </div>
             </div>
           </div>
@@ -337,40 +347,40 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content card">
               <div class="card-meta">
-                <span class="badge badge-commercial">Retail & Autoservicio</span>
-                <span class="period">Diciembre 2010 — Agosto 2015 (4 años 9 meses)</span>
+                <span class="badge badge-commercial" data-i18n="role4Badge">Retail & Autoservicio</span>
+                <span class="period" data-i18n="role4Period">Noviembre 2010 — Agosto 2015 (4 años 10 meses)</span>
               </div>
-              <h3 class="role-title">Key Account Executive (Retail / Supermercados)</h3>
+              <h3 class="role-title" data-i18n="role4Title">Key Account Executive (Retail / Supermercados)</h3>
               <h4 class="company-name">
-                <span>Grupo Bimbo</span>
-                <span class="location-tag">📍 Ciudad de México, México</span>
+                <span data-i18n="role4Company">Grupo Bimbo</span>
+                <span class="location-tag" data-i18n="role4Location">📍 Ciudad de México, México</span>
               </h4>
 
-              <p class="role-summary">
-                Gestión comercial integral de la cuenta de dos cadenas líderes de supermercados en México, logrando incrementos sustanciales de ingresos, rentabilidad y posicionamiento.
+              <p class="role-summary" data-i18n="role4Summary">
+                Gestión de las cuentas de dos de las principales cadenas de supermercados en México, implementando estrategias de vanguardia que produjeron incrementos destacados en ingresos y rentabilidad.
               </p>
 
               <ul class="impact-list">
-                <li>
-                  <strong>Crecimiento Anual Sostenido (+12%):</strong> Impulso de un crecimiento del <strong>12% anual</strong> por cadena a través de optimización de costos de distribución, planeación promocional y espacios adicionales de exhibición.
+                <li data-i18n="role4Bullet1">
+                  <strong>Crecimiento Anual Sostenido (+12%):</strong> Impulso de un crecimiento anual de aproximadamente el <strong>12%</strong> por cadena mediante optimización logística, promociones innovadoras y espacios preferenciales.
                 </li>
-                <li>
-                  <strong>Eficiencia en Presupuestos:</strong> Administración efectiva de presupuestos promocionales, generando un ROI positivo mediante planeación y ejecución disciplinada.
+                <li data-i18n="role4Bullet2">
+                  <strong>Maximización de ROI Promocional:</strong> Administración de presupuestos con énfasis en ROI mediante insights basados en datos.
                 </li>
-                <li>
-                  <strong>Planes de Negocio & Cross-Docking:</strong> Desarrollo de planes anuales de negocio, negociación de descuentos comerciales e implementación de <em>cross-docking</em> para reducción de costos logísticos.
+                <li data-i18n="role4Bullet3">
+                  <strong>Planes de Negocio & Cross-Docking:</strong> Elaboración de planes conjuntos de negocio (JBP), negociación de descuentos comerciales e implementación de cross-docking.
                 </li>
-                <li>
-                  <strong>Cumplimiento de DSO & Innovación:</strong> Cumplimiento de metas de rotación de cartera (DSO) en conjunto con el área de crédito, y trabajo con equipos interdisciplinarios para adaptar productos a nichos específicos.
+                <li data-i18n="role4Bullet4">
+                  <strong>Cumplimiento de DSO & Sinergia:</strong> Gestión de rotación de cartera (DSO) y colaboración interdisciplinaria para la adaptación y desarrollo de productos.
                 </li>
               </ul>
 
               <div class="tech-tags">
-                <span class="tag">Estrategia de Retail</span>
+                <span class="tag">Retail Strategy</span>
                 <span class="tag">Cross-Docking</span>
-                <span class="tag">ROI Promocional</span>
-                <span class="tag">Gestión de DSO</span>
-                <span class="tag">Innovación Comercial</span>
+                <span class="tag">Trade Marketing ROI</span>
+                <span class="tag">DSO Management</span>
+                <span class="tag">Joint Business Planning</span>
               </div>
             </div>
           </div>
@@ -385,50 +395,138 @@
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Producción Científica</span>
-          <h2 class="section-title">Investigación & Publicaciones</h2>
-          <p class="section-desc">
+          <span class="section-tag" data-i18n="pubsTag">Producción Científica</span>
+          <h2 class="section-title" data-i18n="pubsTitle">Investigación & Publicaciones</h2>
+          <p class="section-desc" data-i18n="pubsDesc">
             Contribuciones académicas en modelos de valor compartido, metodologías comparativas y sostenibilidad en mercados emergentes.
           </p>
         </div>
 
         <div class="pubs-grid">
 
-          <!-- Pub 1 -->
+          <!-- Pub 1: Journal of Strategy and Management -->
           <div class="pub-card card">
-            <div class="pub-type-badge">Artículo Científico / Análisis Comparativo</div>
-            <h3 class="pub-title">
-              Proposition de valeur mixte, triple bilan, création de valeur partagée, et base de la pyramide, quelles différences? Une analyse comparative avec la méthodologie de Morse
-            </h3>
-            <p class="pub-authors">Mariana Vázquez Pacho, PhD</p>
-            <p class="pub-summary">
-              Análisis comparativo riguroso aplicando la metodología de Morse para examinar las diferencias conceptuales, estructurales y prácticas entre modelos de propuesta de valor mixta, triple balance (triple bottom line), creación de valor compartido y estrategias en la base de la pirámide (BoP).
-            </p>
-            <div class="pub-actions">
-              <button class="btn btn-xs btn-outline btn-citation" data-citation='@article{vazquez2024proposition, title={Proposition de valeur mixte, triple bilan, création de valeur partagée, et base de la pyramide, quelles différences? Une analyse comparative avec la méthodologie de Morse}, author={Vázquez Pacho, Mariana}, year={2024}}' id="btnCopyBibtex1">
-                <span>Copiar Cita (BibTeX)</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-              </button>
-              <span class="copied-indicator">¡Copiado!</span>
-            </div>
-          </div>
-
-          <!-- Pub 2 -->
-          <div class="pub-card card">
-            <div class="pub-type-badge">Ponencia en Conferencia Internacional</div>
+            <div class="pub-type-badge" data-i18n="pubType1">Artículo en Revista Indexada (Scopus / Q1)</div>
             <h3 class="pub-title">
               From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?
             </h3>
-            <p class="pub-authors">Mariana Vázquez Pacho, PhD</p>
+            <p class="pub-authors"><strong>Vázquez-Pacho, M.G.</strong> & Payaud, M.A. (2024 / 2025)</p>
+            <p class="pub-outlet"><em>Journal of Strategy and Management</em>, Vol. 18 No. 1, pp. 123–147. Emerald Publishing.</p>
             <p class="pub-summary">
-              Investigación sobre la transición de la formulación estratégica al impacto social verificable en corporaciones multinacionales, analizando los mecanismos de innovación en modelos de negocio para la generación sostenible y escalable de valor en comunidades en la base de la pirámide.
+              Investigación empírica que examina las acciones y tácticas estratégicas desplegadas por corporaciones multinacionales (MNCs) para innovar sus modelos de negocio e impulsar valor social en la Base de la Pirámide (BoP).
             </p>
             <div class="pub-actions">
-              <button class="btn btn-xs btn-outline btn-citation" data-citation='@inproceedings{vazquez2024strategy, title={From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?}, author={Vázquez Pacho, Mariana}, year={2024}}' id="btnCopyBibtex2">
-                <span>Copiar Cita (BibTeX)</span>
+              <a href="https://doi.org/10.1108/JSMA-06-2023-0145" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary">
+                <span data-i18n="btnViewArticle">Ver Publicación (DOI)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <button class="btn btn-xs btn-outline btn-citation" data-citation='@article{vazquezpacho2024strategy,
+  title={From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?},
+  author={V{\'a}zquez-Pacho, Mariana G. and Payaud, Marielle A.},
+  journal={Journal of Strategy and Management},
+  volume={18},
+  number={1},
+  pages={123--147},
+  year={2024},
+  publisher={Emerald Publishing Limited},
+  doi={10.1108/JSMA-06-2023-0145}
+}' id="btnCopyBibtex1">
+                <span data-i18n="btnCopyBibtex">Copiar Cita (BibTeX)</span>
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
               </button>
-              <span class="copied-indicator">¡Copiado!</span>
+              <span class="copied-indicator" data-i18n="copiedText">¡Copiado!</span>
+            </div>
+          </div>
+
+          <!-- Pub 2: Routledge Book Chapter -->
+          <div class="pub-card card">
+            <div class="pub-type-badge" data-i18n="pubType2">Capítulo de Libro (Editorial Routledge)</div>
+            <h3 class="pub-title">
+              Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV), and Base of Pyramid (BOP) Concepts: What Are the Differences? A Comparative Analysis Using Morse's Methodology
+            </h3>
+            <p class="pub-authors"><strong>Vázquez-Pacho, M.</strong> & Payaud, M.A. (2025)</p>
+            <p class="pub-outlet">In <em>Values in Contemporary International Business</em> (Chapter 5). Routledge (Taylor & Francis Group).</p>
+            <p class="pub-summary">
+              Análisis comparativo riguroso aplicando la metodología de Morse para delimitar las diferencias conceptuales, metodológicas y operativas entre los marcos de BVP, TBL, CSV y BoP en los negocios internacionales.
+            </p>
+            <div class="pub-actions">
+              <a href="https://www.taylorfrancis.com/books/edit/10.4324/9781003487319/values-contemporary-international-business" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary">
+                <span data-i18n="btnViewBook">Ver Libro (Routledge)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <button class="btn btn-xs btn-outline btn-citation" data-citation='@incollection{vazquezpacho2025blended,
+  title={Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV), and Base of Pyramid (BOP) Concepts: What Are the Differences? A Comparative Analysis Using Morse&apos;s Methodology},
+  author={V{\'a}zquez-Pacho, Mariana and Payaud, Marielle A.},
+  booktitle={Values in Contemporary International Business},
+  chapter={5},
+  year={2025},
+  publisher={Routledge}
+}' id="btnCopyBibtex2">
+                <span data-i18n="btnCopyBibtex">Copiar Cita (BibTeX)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <span class="copied-indicator" data-i18n="copiedText">¡Copiado!</span>
+            </div>
+          </div>
+
+          <!-- Pub 3: Vuibert Book Chapter -->
+          <div class="pub-card card">
+            <div class="pub-type-badge" data-i18n="pubType3">Capítulo de Libro (Editorial Vuibert / Atlas AFMI)</div>
+            <h3 class="pub-title">
+              Proposition de valeur mixte, triple bilan, création de valeur partagée, et base de la pyramide, quelles différences ? Une analyse comparative avec la méthodologie de Morse
+            </h3>
+            <p class="pub-authors"><strong>Vázquez-Pacho, M.</strong> & Payaud, M.A. (2023)</p>
+            <p class="pub-outlet">In F. Goxe & M. Viegas-Pires (Eds.), <em>Management international et valeurs</em> (pp. 115–156). Vuibert (Collection Atlas AFMI).</p>
+            <p class="pub-summary">
+              Contribution majeure examinant l'articulation entre responsabilité sociétale, création de valeur partagée et innovation de modèle économique pour les entreprises internationalisées.
+            </p>
+            <div class="pub-actions">
+              <a href="https://www.researchgate.net/publication/371661633_Proposition_de_valeur_mixte_triple_bilan_creation_de_valeur_partagee_et_base_de_la_pyramide_quelles_differences_Une_analyse_comparative_avec_la_methodologie_de_Morse" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary">
+                <span data-i18n="btnViewBook">Ver en ResearchGate</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <button class="btn btn-xs btn-outline btn-citation" data-citation='@incollection{vazquezpacho2023proposition,
+  title={Proposition de valeur mixte, triple bilan, cr{\'e}ation de valeur partag{\'e}e, et base de la pyramide, quelles diff{\'e}rences ? Une analyse comparative avec la m{\'e}thodologie de Morse},
+  author={V{\'a}zquez-Pacho, Mariana and Payaud, Marielle A.},
+  booktitle={Management international et valeurs},
+  editor={Goxe, Fran{\c{c}}ois and Viegas-Pires, Micha{\"e}l},
+  pages={115--156},
+  year={2023},
+  publisher={Vuibert}
+}' id="btnCopyBibtex3">
+                <span data-i18n="btnCopyBibtex">Copiar Cita (BibTeX)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <span class="copied-indicator" data-i18n="copiedText">¡Copiado!</span>
+            </div>
+          </div>
+
+          <!-- Pub 4: Doctoral Thesis -->
+          <div class="pub-card card">
+            <div class="pub-type-badge" data-i18n="pubType4">Tesis Doctoral (Université Jean Moulin Lyon 3)</div>
+            <h3 class="pub-title">
+              L'organisation interne et externe des modèles d'affaires des FMN pour la création de valeur mutuelle
+            </h3>
+            <p class="pub-authors"><strong>Dr. Mariana Guadalupe Vázquez Pacho</strong> (2024)</p>
+            <p class="pub-outlet">Université Jean Moulin Lyon 3 • École Doctorale SEG • Magellan Research Center (iaelyon).</p>
+            <p class="pub-summary">
+              Thèse de doctorat en sciences de gestion analysant l'alignement stratégique interne et les réseaux externes des firmes multinationales pour la création durable de valeur partagée.
+            </p>
+            <div class="pub-actions">
+              <a href="https://theses.fr/2024LYO30018" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-primary">
+                <span data-i18n="btnViewThesis">Ver Registro Theses.fr</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+              <button class="btn btn-xs btn-outline btn-citation" data-citation='@phdthesis{vazquezpacho2024these,
+  title={L&apos;organisation interne et externe des mod{\`e}les d&apos;affaires des FMN pour la cr{\'e}ation de valeur mutuelle},
+  author={V{\'a}zquez-Pacho, Mariana Guadalupe},
+  year={2024},
+  school={Universit{\'e} Jean Moulin Lyon 3}
+}' id="btnCopyBibtex4">
+                <span data-i18n="btnCopyBibtex">Copiar Cita (BibTeX)</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <span class="copied-indicator" data-i18n="copiedText">¡Copiado!</span>
             </div>
           </div>
 
@@ -442,10 +540,10 @@
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Competencias</span>
-          <h2 class="section-title">Dominios de Especialidad</h2>
-          <p class="section-desc">
-            Conjunto de capacidades analíticas, estratégicas y comerciales consolidadas.
+          <span class="section-tag" data-i18n="skillsTag">Competencias</span>
+          <h2 class="section-title" data-i18n="skillsTitle">Dominios de Especialidad</h2>
+          <p class="section-desc" data-i18n="skillsDesc">
+            Conjunto de capacidades analíticas, estratégicas, de software y comerciales consolidadas.
           </p>
         </div>
 
@@ -454,45 +552,64 @@
           <div class="skill-category-card card">
             <div class="skill-category-header">
               <div class="cat-icon">🌱</div>
-              <h3>Sostenibilidad & Gobernanza (ESG)</h3>
+              <h3 data-i18n="skillCat1Title">Sostenibilidad & Gobernanza (ESG)</h3>
             </div>
             <ul class="skill-pill-list">
-              <li>Environmental, Social & Corporate Governance (ESG)</li>
+              <li>Environmental, Social & Governance (ESG)</li>
               <li>Objetivos de Desarrollo Sostenible (ODS / SDGs)</li>
               <li>Modelos de Negocio Sostenibles & Híbridos</li>
               <li>Base de la Pirámide (BoP) & Valor Compartido</li>
               <li>Triple Balance (Triple Bottom Line)</li>
-              <li>Compromiso y Gestión de Stakeholders</li>
+              <li>Gestión y Compromiso de Stakeholders</li>
+              <li>Sustainable Innovation Thinking</li>
             </ul>
           </div>
 
           <div class="skill-category-card card">
             <div class="skill-category-header">
               <div class="cat-icon">📈</div>
-              <h3>Estrategia & Liderazgo Comercial</h3>
+              <h3 data-i18n="skillCat2Title">Estrategia & Liderazgo Comercial</h3>
             </div>
             <ul class="skill-pill-list">
               <li>Planeación Estratégica Corporativa</li>
-              <li>Gestión de Cuentas Clave (KAE Mayorista / Retail)</li>
-              <li>Crecimiento de Sell-in, Sell-out y Cuotas Comerciales</li>
+              <li>Key Account Management (Mayorista / Retail)</li>
+              <li>Crecimiento de Sell-in & Sell-out</li>
               <li>Desarrollo de Casos de Negocio (Business Cases)</li>
               <li>Negociación de Acuerdos Comerciales & DSO</li>
-              <li>Desarrollo de Nuevos Negocios & Mercados B2B</li>
+              <li>Desarrollo de Nuevos Negocios & B2B</li>
+              <li>Presupuestación & Optimización de ROI</li>
             </ul>
           </div>
 
           <div class="skill-category-card card">
             <div class="skill-category-header">
               <div class="cat-icon">🔬</div>
-              <h3>Investigación & Métodos Analíticos</h3>
+              <h3 data-i18n="skillCat3Title">Investigación & Métodos Analíticos</h3>
             </div>
             <ul class="skill-pill-list">
-              <li>Análisis Cualitativo & Comparativo (Metodología Morse)</li>
+              <li>Investigación de Mercados Ágil</li>
+              <li>Análisis Cualitativo & Metodología Morse</li>
               <li>Mapeo de Cadenas de Suministro y Redes de Valor</li>
-              <li>Contaduría Pública, Costos y Análisis Financiero</li>
-              <li>Gestión Integral de Proyectos de Investigación</li>
+              <li>Contaduría Pública, Costos & Análisis Financiero</li>
+              <li>Foresight Techniques & Análisis de Tendencias</li>
               <li>Ponencias en Conferencias Científicas Globales</li>
-              <li>Toma de Decisiones Estratégicas Basadas en Datos</li>
+              <li>Toma de Decisiones Basada en Datos</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card card">
+            <div class="skill-category-header">
+              <div class="cat-icon">💻</div>
+              <h3 data-i18n="skillCat4Title">Software & Plataformas Especializadas</h3>
+            </div>
+            <ul class="skill-pill-list">
+              <li>Power BI & Visualización de Datos</li>
+              <li>NVivo (Análisis Cualitativo)</li>
+              <li>SPSS & SAS Viya (Analítica Estadística)</li>
+              <li>Salesforce CRM</li>
+              <li>Nielsen Analytics & ISCAM (FMCG Insights)</li>
+              <li>EBSCOhost & MarketLine</li>
+              <li>Microsoft Office Suite Avanzado</li>
             </ul>
           </div>
 
@@ -506,9 +623,9 @@
       <div class="container">
         
         <div class="section-header">
-          <span class="section-tag">Credenciales</span>
-          <h2 class="section-title">Formación Académica & Honores</h2>
-          <p class="section-desc">
+          <span class="section-tag" data-i18n="eduTag">Credenciales</span>
+          <h2 class="section-title" data-i18n="eduTitle">Formación Académica & Honores</h2>
+          <p class="section-desc" data-i18n="eduDesc">
             Trayectoria académica multicultural de alto nivel y certificaciones ejecutivas.
           </p>
         </div>
@@ -518,19 +635,19 @@
           <!-- PhD Lyon 3 -->
           <div class="edu-card card">
             <div class="edu-year">2019 — 2024</div>
-            <h3 class="edu-degree">Ph.D. in Management Sciences</h3>
-            <h4 class="edu-institution">Université Jean Moulin Lyon 3 (Francia)</h4>
-            <p class="edu-focus">
-              <strong>Especialidad:</strong> Estrategia de Negocios y Mercados en Desarrollo • Laboratorio de Investigación Magellan.
+            <h3 class="edu-degree" data-i18n="eduPhdTitle">PhD in Management (Strategy & Sustainability)</h3>
+            <h4 class="edu-institution" data-i18n="eduPhdInst">Université Jean Moulin Lyon 3 (Francia)</h4>
+            <p class="edu-focus" data-i18n="eduPhdFocus">
+              Investigación en modelos de negocio sostenibles, creación de valor social en BoP y estrategias de multinacionales. Laboratorio Magellan.
             </p>
           </div>
 
           <!-- MSc Burgundy -->
           <div class="edu-card card">
             <div class="edu-year">2017</div>
-            <h3 class="edu-degree">MSc in Global Marketing & Negotiation</h3>
-            <h4 class="edu-institution">Burgundy School of Business (Francia)</h4>
-            <p class="edu-focus">
+            <h3 class="edu-degree" data-i18n="eduMscTitle">Master in Global Marketing & Negotiation</h3>
+            <h4 class="edu-institution" data-i18n="eduMscInst">Burgundy School of Business (Francia)</h4>
+            <p class="edu-focus" data-i18n="eduMscFocus">
               Negociación internacional, dinámicas de mercado globales y marketing estratégico.
             </p>
           </div>
@@ -538,9 +655,9 @@
           <!-- Master UADY -->
           <div class="edu-card card">
             <div class="edu-year">2017</div>
-            <h3 class="edu-degree">Maestría en Dirección de Mercadotecnia</h3>
-            <h4 class="edu-institution">Universidad Autónoma de Yucatán (México)</h4>
-            <p class="edu-focus">
+            <h3 class="edu-degree" data-i18n="eduMasterTitle">Maestría en Dirección de Mercadotecnia</h3>
+            <h4 class="edu-institution" data-i18n="eduMasterInst">Universidad Autónoma de Yucatán (México)</h4>
+            <p class="edu-focus" data-i18n="eduMasterFocus">
               Dirección estratégica comercial, comportamiento del consumidor y desarrollo de canales.
             </p>
           </div>
@@ -548,20 +665,20 @@
           <!-- UNAM -->
           <div class="edu-card card">
             <div class="edu-year">2014</div>
-            <h3 class="edu-degree">Diplomados en Administración y Gestión de Empresas</h3>
-            <h4 class="edu-institution">Universidad Nacional Autónoma de México (UNAM)</h4>
-            <p class="edu-focus">
-              Administración corporativa integral y desarrollo directivo.
+            <h3 class="edu-degree" data-i18n="eduUnamTitle">Diplomados en Administración y Gestión de Empresas</h3>
+            <h4 class="edu-institution" data-i18n="eduUnamInst">Universidad Nacional Autónoma de México (UNAM)</h4>
+            <p class="edu-focus" data-i18n="eduUnamFocus">
+              Administración corporativa integral, finanzas y desarrollo directivo.
             </p>
           </div>
 
           <!-- Bachelor UADY -->
           <div class="edu-card card">
             <div class="edu-year">2009</div>
-            <div class="honor-badge">Graduada con Honores ⭐</div>
-            <h3 class="edu-degree">Licenciatura en Contaduría Pública</h3>
-            <h4 class="edu-institution">Universidad Autónoma de Yucatán (México)</h4>
-            <p class="edu-focus">
+            <div class="honor-badge" data-i18n="honorText">Graduada con Honores ⭐</div>
+            <h3 class="edu-degree" data-i18n="eduBachelorTitle">Licenciatura en Contaduría Pública</h3>
+            <h4 class="edu-institution" data-i18n="eduBachelorInst">Universidad Autónoma de Yucatán (México)</h4>
+            <p class="edu-focus" data-i18n="eduBachelorFocus">
               Fundamentos rigurosos de finanzas corporativas, costos, presupuestación y auditoría.
             </p>
           </div>
@@ -571,20 +688,20 @@
         <!-- Languages & Certifications Bar -->
         <div class="credentials-bar card">
           <div class="cred-block">
-            <h4 class="cred-title">🌐 Idiomas</h4>
+            <h4 class="cred-title" data-i18n="langTitle">🌐 Idiomas</h4>
             <div class="lang-pills">
-              <span class="lang-pill"><strong>Español:</strong> Nativo</span>
-              <span class="lang-pill"><strong>Inglés:</strong> Profesional Completo (TOEIC 915)</span>
-              <span class="lang-pill"><strong>Francés:</strong> Profesional Operativo</span>
+              <span class="lang-pill" data-i18n="langEs"><strong>Español:</strong> Nativo</span>
+              <span class="lang-pill" data-i18n="langEn"><strong>Inglés:</strong> Avanzado / Profesional Completo (TOEIC 915)</span>
+              <span class="lang-pill" data-i18n="langFr"><strong>Francés:</strong> Avanzado / Profesional Operativo</span>
             </div>
           </div>
 
           <div class="cred-divider"></div>
 
           <div class="cred-block">
-            <h4 class="cred-title">📜 Certificaciones</h4>
+            <h4 class="cred-title" data-i18n="certTitle">📜 Especialidad</h4>
             <div class="cert-pills">
-              <span class="cert-pill">Strategy and Sustainability</span>
+              <span class="cert-pill" data-i18n="cert1">Estrategia y Sostenibilidad</span>
             </div>
           </div>
         </div>
@@ -598,31 +715,36 @@
         
         <div class="contact-card card">
           <div class="contact-content">
-            <span class="section-tag">Contacto & Colaboración</span>
-            <h2 class="contact-heading">Conectemos para crear valor e impacto sostenible</h2>
-            <p class="contact-sub">
+            <span class="section-tag" data-i18n="contactTag">Contacto & Colaboración</span>
+            <h2 class="contact-heading" data-i18n="contactHeading">Conectemos para crear valor e impacto sostenible</h2>
+            <p class="contact-sub" data-i18n="contactSub">
               Abierta a asesoría estratégica, dirección ejecutiva, consultoría en modelos de negocio ESG, conferencias y proyectos de alto impacto.
             </p>
 
             <div class="contact-details">
               <div class="detail-row">
                 <span class="detail-label">Email:</span>
-                <a href="mailto:marianapacho@gmail.com" class="detail-link" id="emailLink">marianapacho@gmail.com</a>
+                <a href="mailto:mariana.vazquezpacho@gmail.com" class="detail-link" id="emailLink">mariana.vazquezpacho@gmail.com</a>
                 <button class="btn btn-xs btn-outline" id="btnCopyEmail" title="Copiar correo">
-                  <span>Copiar</span>
+                  <span data-i18n="contactCopyBtn">Copiar</span>
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                 </button>
-                <span class="copied-email-tag" id="copiedEmailTag">¡Copiado!</span>
+                <span class="copied-email-tag" id="copiedEmailTag" data-i18n="contactCopied">¡Copiado!</span>
               </div>
 
               <div class="detail-row">
-                <span class="detail-label">Teléfono:</span>
-                <a href="tel:+529999975369" class="detail-link">+52 (9999) 97 53 69</a>
+                <span class="detail-label" id="labelPhone">Teléfono:</span>
+                <a href="tel:+573224299154" class="detail-link">+57 322 4299154</a>
               </div>
 
               <div class="detail-row">
                 <span class="detail-label">LinkedIn:</span>
                 <a href="https://www.linkedin.com/in/mariana-vazquez-pacho" target="_blank" rel="noopener noreferrer" class="detail-link">linkedin.com/in/mariana-vazquez-pacho</a>
+              </div>
+
+              <div class="detail-row">
+                <span class="detail-label">ResearchGate:</span>
+                <a href="https://www.researchgate.net/profile/Mariana-Vazquez-Pacho" target="_blank" rel="noopener noreferrer" class="detail-link">researchgate.net/Mariana-Vazquez-Pacho</a>
               </div>
 
               <div class="detail-row">
@@ -632,12 +754,12 @@
             </div>
 
             <div class="contact-buttons">
-              <a href="mailto:marianapacho@gmail.com" class="btn btn-primary" id="btnContactEmail">
-                <span>Escribir Mensaje</span>
+              <a href="mailto:mariana.vazquezpacho@gmail.com" class="btn btn-primary" id="btnContactEmail">
+                <span data-i18n="contactBtnEmail">Escribir Mensaje</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               </a>
               <a href="Profile.pdf" download class="btn btn-secondary" id="btnContactCv">
-                <span>Descargar CV Completo</span>
+                <span data-i18n="contactBtnCv">Descargar CV Completo</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               </a>
             </div>
@@ -653,20 +775,21 @@
     <div class="container footer-container">
       <div class="footer-left">
         <p class="footer-copy">
-          &copy; <span id="currentYear"></span> <strong>Dr. Mariana Vázquez Pacho, PhD</strong>. Todos los derechos reservados.
+          &copy; <span id="currentYear"></span> <strong>Dr. Mariana Vázquez Pacho, PhD</strong>. <span data-i18n="footerCopy">Todos los derechos reservados.</span>
         </p>
-        <p class="footer-tagline">
+        <p class="footer-tagline" data-i18n="footerTagline">
           Estrategia, Sostenibilidad e Innovación en Modelos de Negocio.
         </p>
       </div>
 
       <div class="footer-links">
         <a href="#hero">Inicio</a>
-        <a href="#about">Perfil</a>
-        <a href="#experience">Trayectoria</a>
-        <a href="#publications">Investigación</a>
-        <a href="https://github.com/mapacho314" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#about" data-i18n="navProfile">Perfil</a>
+        <a href="#experience" data-i18n="navExperience">Trayectoria</a>
+        <a href="#publications" data-i18n="navPublications">Investigación</a>
+        <a href="https://www.researchgate.net/profile/Mariana-Vazquez-Pacho" target="_blank" rel="noopener noreferrer">ResearchGate</a>
         <a href="https://www.linkedin.com/in/mariana-vazquez-pacho" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/mapacho314" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
@@ -675,6 +798,7 @@
   <div class="toast" id="toast" role="alert" aria-live="polite"></div>
 
   <!-- Scripts -->
+  <script src="translations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

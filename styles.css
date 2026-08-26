@@ -286,6 +286,34 @@ body {
   gap: 0.75rem;
 }
 
+.lang-toggle-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  height: 38px;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: all var(--transition-fast);
+}
+
+.lang-toggle-btn:hover {
+  border-color: var(--brand-blue);
+  color: var(--brand-blue-light);
+  transform: translateY(-2px);
+}
+
+.lang-icon {
+  font-size: 1rem;
+}
+
 .theme-toggle-btn {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
@@ -772,7 +800,14 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   color: var(--brand-blue-light);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.pub-outlet {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
 }
 
 .pub-summary {
@@ -788,6 +823,7 @@ body {
   align-items: center;
   gap: 0.75rem;
   position: relative;
+  flex-wrap: wrap;
 }
 
 .copied-indicator {
@@ -805,7 +841,7 @@ body {
 /* SKILLS MATRIX SECTION */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
 }
 

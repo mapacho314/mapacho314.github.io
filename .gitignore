@@ -1,0 +1,19 @@
+# Private / Local source documents
+untracked/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / NPM (if any build tools are used)
+node_modules/
+dist/
+build/
+.cache/

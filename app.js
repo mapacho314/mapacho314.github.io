@@ -1,5 +1,6 @@
 /**
  * Dr. Mariana Vázquez Pacho, PhD — Executive Landing Page & CV Logic
+ * Features: Bilingual Switcher (EN/ES), Theme Toggle, Dynamic Filters, BibTeX Copy, Email Copy
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,8 +10,74 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // 2. Theme Toggle (Dark / Light)
+  // 2. Language Switcher Engine
+  const langToggle = document.getElementById('langToggle');
+  const langLabel = document.getElementById('langLabel');
   const htmlElement = document.documentElement;
+
+  // Determine initial language (saved > browser > 'es')
+  const savedLang = localStorage.getItem('executive_lang') || 
+    (navigator.language && navigator.language.startsWith('en') ? 'en' : 'es');
+
+  function applyLanguage(lang) {
+    const dict = typeof translations !== 'undefined' && translations[lang] ? translations[lang] : null;
+    if (!dict) return;
+
+    htmlElement.setAttribute('lang', lang);
+
+    // Update all elements with data-i18n
+    const i18nElements = document.querySelectorAll('[data-i18n]');
+    i18nElements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        // Use innerHTML to preserve bold/italic/links formatting in strings
+        if (el.tagName === 'META') {
+          el.setAttribute('content', dict[key]);
+        } else if (el.tagName === 'TITLE') {
+          document.title = dict[key];
+        } else {
+          el.innerHTML = dict[key];
+        }
+      }
+    });
+
+    // Update Language Toggle Button UI
+    if (langLabel) {
+      langLabel.textContent = lang === 'es' ? 'EN' : 'ES';
+    }
+    if (langToggle) {
+      langToggle.setAttribute('title', dict.langToggleTitle || (lang === 'es' ? 'Switch to English' : 'Cambiar a Español'));
+      langToggle.setAttribute('aria-label', dict.langToggleTitle || 'Switch language');
+    }
+
+    // Update Phone Label if needed
+    const labelPhone = document.getElementById('labelPhone');
+    if (labelPhone) {
+      labelPhone.textContent = lang === 'es' ? 'Teléfono:' : 'Phone:';
+    }
+
+    // Update Filter Label
+    const filterLabel = document.getElementById('filterLabel');
+    if (filterLabel) {
+      filterLabel.textContent = lang === 'es' ? 'Filtro:' : 'Filter:';
+    }
+
+    localStorage.setItem('executive_lang', lang);
+  }
+
+  // Initialize Language
+  applyLanguage(savedLang);
+
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      const currentLang = htmlElement.getAttribute('lang') || 'es';
+      const nextLang = currentLang === 'es' ? 'en' : 'es';
+      applyLanguage(nextLang);
+      showToast(nextLang === 'en' ? 'Language switched to English' : 'Idioma cambiado a Español');
+    });
+  }
+
+  // 3. Theme Toggle (Dark / Light)
   const themeToggle = document.getElementById('themeToggle');
   const themeIcon = document.getElementById('themeIcon');
 
@@ -32,17 +99,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const current = htmlElement.getAttribute('data-theme') || 'dark';
       const next = current === 'dark' ? 'light' : 'dark';
       applyTheme(next);
-      showToast(`Tema cambiado a modo ${next === 'dark' ? 'oscuro' : 'claro'}`);
+      const isEn = htmlElement.getAttribute('lang') === 'en';
+      showToast(isEn 
+        ? `Theme switched to ${next === 'dark' ? 'dark' : 'light'} mode` 
+        : `Tema cambiado a modo ${next === 'dark' ? 'oscuro' : 'claro'}`
+      );
     });
   }
 
-  // 3. Experience Category Filter
+  // 4. Experience Category Filter
   const filterBtns = document.querySelectorAll('.filter-btn');
   const timelineItems = document.querySelectorAll('.timeline-item');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Toggle active button state
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
 
@@ -63,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Copy BibTeX Citation
+  // 5. Copy BibTeX Citation
   const citationButtons = document.querySelectorAll('.btn-citation');
   citationButtons.forEach(btn => {
     btn.addEventListener('click', async () => {
@@ -79,16 +149,17 @@ document.addEventListener('DOMContentLoaded', () => {
             indicator.classList.remove('visible');
           }, 2500);
         }
-        showToast('¡Cita BibTeX copiada al portapapeles!');
+        const isEn = htmlElement.getAttribute('lang') === 'en';
+        showToast(isEn ? 'BibTeX citation copied to clipboard!' : '¡Cita BibTeX copiada al portapapeles!');
       } catch (err) {
-        console.error('Error al copiar texto:', err);
+        console.error('Error copying text:', err);
       }
     });
   });
 
-  // 5. Copy Email Button
+  // 6. Copy Email Button
   const btnCopyEmail = document.getElementById('btnCopyEmail');
-  const emailText = 'marianapacho@gmail.com';
+  const emailText = 'mariana.vazquezpacho@gmail.com';
   const copiedEmailTag = document.getElementById('copiedEmailTag');
 
   if (btnCopyEmail) {
@@ -101,14 +172,15 @@ document.addEventListener('DOMContentLoaded', () => {
             copiedEmailTag.classList.remove('visible');
           }, 2500);
         }
-        showToast('¡Email copiado al portapapeles!');
+        const isEn = htmlElement.getAttribute('lang') === 'en';
+        showToast(isEn ? 'Email copied to clipboard!' : '¡Email copiado al portapapeles!');
       } catch (err) {
-        console.error('Error al copiar email:', err);
+        console.error('Error copying email:', err);
       }
     });
   }
 
-  // 6. Toast Notification Utility
+  // 7. Toast Notification Utility
   const toast = document.getElementById('toast');
   let toastTimer = null;
 
