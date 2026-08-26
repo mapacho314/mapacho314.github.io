@@ -10,6 +10,7 @@ const translations = {
     metaDesc: "Doctora en Ciencias de Gestión y Consultora Estratégica. Más de 12 años integrando innovación en modelos de negocio sostenibles (ESG/ODS) y liderazgo comercial FMCG.",
     
     // Navbar
+    navHome: "Inicio",
     navProfile: "Perfil",
     navApproach: "Enfoque",
     navExperience: "Trayectoria",
@@ -120,11 +121,17 @@ const translations = {
     pubType3: "Capítulo de Libro (Editorial Vuibert / Atlas AFMI)",
     pubType4: "Tesis Doctoral (Université Jean Moulin Lyon 3)",
     
+    pub1Summary: "Investigación empírica que examina las acciones y tácticas estratégicas desplegadas por corporaciones multinacionales (MNCs) para innovar sus modelos de negocio e impulsar valor social en la Base de la Pirámide (BoP).",
+    pub2Summary: "Análisis comparativo riguroso aplicando la metodología de Morse para delimitar las diferencias conceptuales, metodológicas y operativas entre los marcos de BVP, TBL, CSV y BoP en los negocios internacionales.",
+    pub3Summary: "Contribución académica clave examinando la articulación entre responsabilidad social, creación de valor compartido e innovación en modelos de negocio para empresas multinacionales.",
+    pub4Summary: "Tesis doctoral en ciencias de gestión que analiza la alineación estratégica interna y las redes colaborativas externas de las empresas multinacionales para la creación sostenible de valor compartido.",
+
     btnCopyBibtex: "Copiar Cita (BibTeX)",
     copiedText: "¡Copiado!",
-    btnViewArticle: "Ver Publicación",
-    btnViewBook: "Ver Libro",
-    btnViewThesis: "Ver Tesis",
+    btnViewArticle: "Ver Publicación (DOI)",
+    btnViewBookRoutledge: "Ver Libro (Routledge)",
+    btnViewRg: "Ver en ResearchGate",
+    btnViewThesis: "Ver Registro Theses.fr",
 
     // Skills
     skillsTag: "Competencias",
@@ -132,9 +139,40 @@ const translations = {
     skillsDesc: "Conjunto de capacidades analíticas, estratégicas, de software y comerciales consolidadas.",
     
     skillCat1Title: "Sostenibilidad & Gobernanza (ESG)",
+    skillCat1_1: "Environmental, Social & Governance (ESG)",
+    skillCat1_2: "Objetivos de Desarrollo Sostenible (ODS / SDGs)",
+    skillCat1_3: "Modelos de Negocio Sostenibles & Híbridos",
+    skillCat1_4: "Base de la Pirámide (BoP) & Valor Compartido",
+    skillCat1_5: "Triple Balance (Triple Bottom Line)",
+    skillCat1_6: "Gestión y Compromiso de Stakeholders",
+    skillCat1_7: "Innovación Sostenible (Sustainable Innovation Thinking)",
+
     skillCat2Title: "Estrategia & Liderazgo Comercial",
+    skillCat2_1: "Planeación Estratégica Corporativa",
+    skillCat2_2: "Key Account Management (Mayorista / Retail)",
+    skillCat2_3: "Crecimiento de Sell-in & Sell-out",
+    skillCat2_4: "Desarrollo de Casos de Negocio (Business Cases)",
+    skillCat2_5: "Negociación de Acuerdos Comerciales & DSO",
+    skillCat2_6: "Desarrollo de Nuevos Negocios & B2B",
+    skillCat2_7: "Presupuestación & Optimización de ROI",
+
     skillCat3Title: "Investigación & Métodos Analíticos",
+    skillCat3_1: "Investigación de Mercados Ágil",
+    skillCat3_2: "Análisis Cualitativo & Metodología Morse",
+    skillCat3_3: "Mapeo de Cadenas de Suministro y Redes de Valor",
+    skillCat3_4: "Contaduría Pública, Costos & Análisis Financiero",
+    skillCat3_5: "Técnicas de Prospectiva & Análisis de Tendencias",
+    skillCat3_6: "Ponencias en Conferencias Científicas Globales",
+    skillCat3_7: "Toma de Decisiones Basada en Datos",
+
     skillCat4Title: "Software & Plataformas Especializadas",
+    skillCat4_1: "Power BI & Visualización de Datos",
+    skillCat4_2: "NVivo (Análisis Cualitativo)",
+    skillCat4_3: "SPSS & SAS Viya (Analítica Estadística)",
+    skillCat4_4: "Salesforce CRM",
+    skillCat4_5: "Nielsen Analytics & ISCAM (Insights FMCG)",
+    skillCat4_6: "EBSCOhost & MarketLine",
+    skillCat4_7: "Microsoft Office Suite Avanzado",
 
     // Education
     eduTag: "Credenciales",
@@ -189,6 +227,7 @@ const translations = {
     metaDesc: "PhD in Management & Strategic Consultant with 12+ years bridging academic rigor and commercial excellence in sustainable business models (ESG/SDGs) and FMCG leadership.",
     
     // Navbar
+    navHome: "Home",
     navProfile: "Profile",
     navApproach: "Approach",
     navExperience: "Experience",
@@ -299,11 +338,17 @@ const translations = {
     pubType3: "Book Chapter (Vuibert / Atlas AFMI Publishing)",
     pubType4: "Doctoral Dissertation (Université Jean Moulin Lyon 3)",
     
+    pub1Summary: "Empirical research examining the strategic actions and tactics deployed by multinational corporations (MNCs) to innovate their business models and drive social value creation in Base of the Pyramid (BoP) contexts.",
+    pub2Summary: "Rigorous comparative analysis applying Morse's methodology to delineate conceptual, methodological, and operational boundaries across BVP, TBL, CSV, and BoP frameworks in international business.",
+    pub3Summary: "Key academic contribution examining the interplay between corporate social responsibility, shared value creation, and business model innovation for internationalized firms.",
+    pub4Summary: "Doctoral dissertation in management sciences analyzing internal strategic alignment and external collaborative networks of multinational enterprises for sustainable shared value creation.",
+
     btnCopyBibtex: "Copy Citation (BibTeX)",
     copiedText: "Copied!",
-    btnViewArticle: "View Article",
-    btnViewBook: "View Book",
-    btnViewThesis: "View Thesis",
+    btnViewArticle: "View Publication (DOI)",
+    btnViewBookRoutledge: "View Book (Routledge)",
+    btnViewRg: "View on ResearchGate",
+    btnViewThesis: "View on Theses.fr",
 
     // Skills
     skillsTag: "Competencies",
@@ -311,9 +356,40 @@ const translations = {
     skillsDesc: "Consolidated strategic, analytical, software, and commercial capabilities.",
     
     skillCat1Title: "Sustainability & Governance (ESG)",
+    skillCat1_1: "Environmental, Social & Governance (ESG)",
+    skillCat1_2: "Sustainable Development Goals (SDGs)",
+    skillCat1_3: "Sustainable & Hybrid Business Models",
+    skillCat1_4: "Base of the Pyramid (BoP) & Shared Value",
+    skillCat1_5: "Triple Bottom Line (TBL)",
+    skillCat1_6: "Stakeholder Engagement & Management",
+    skillCat1_7: "Sustainable Innovation Thinking",
+
     skillCat2Title: "Strategy & Commercial Leadership",
+    skillCat2_1: "Corporate Strategic Planning",
+    skillCat2_2: "Key Account Management (Wholesale / Retail)",
+    skillCat2_3: "Sell-in & Sell-out Growth",
+    skillCat2_4: "Executive Business Case Development",
+    skillCat2_5: "Commercial Terms Negotiation & DSO Control",
+    skillCat2_6: "New Business Development & B2B Sales",
+    skillCat2_7: "Budgeting & Promotional ROI Optimization",
+
     skillCat3Title: "Research & Analytical Methods",
+    skillCat3_1: "Agile Market Research",
+    skillCat3_2: "Qualitative Analysis & Morse's Methodology",
+    skillCat3_3: "Supply Chain & Value Network Mapping",
+    skillCat3_4: "Public Accounting, Costing & Financial Analysis",
+    skillCat3_5: "Foresight Techniques & Trend Analysis",
+    skillCat3_6: "International Scientific Conference Dissemination",
+    skillCat3_7: "Data-Driven Decision Making",
+
     skillCat4Title: "Software & Specialized Platforms",
+    skillCat4_1: "Power BI & Data Visualization",
+    skillCat4_2: "NVivo (Qualitative Analysis)",
+    skillCat4_3: "SPSS & SAS Viya (Statistical Analytics)",
+    skillCat4_4: "Salesforce CRM",
+    skillCat4_5: "Nielsen Analytics & ISCAM (FMCG Insights)",
+    skillCat4_6: "EBSCOhost & MarketLine",
+    skillCat4_7: "Advanced Microsoft Office Suite",
 
     // Education
     eduTag: "Credentials",
