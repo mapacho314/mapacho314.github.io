@@ -34,7 +34,7 @@ Acts as a high-impact *sparring partner* for enterprise clients, translating com
 
 4. **Doctoral Dissertation (Université Jean Moulin Lyon 3)**
    > **Vázquez-Pacho, M.G.** (2024). *"L'organisation interne et externe des modèles d'affaires des FMN pour la création de valeur mutuelle"* (*The internal and external organization of MNCs' business models for mutual value creation*). Defended April 2024.  
-   > 🔗 [Theses.fr Record](https://theses.fr/2024LYO30018)
+   > 🔗 [Theses.fr Record](https://theses.fr/2024LYO30016)
 
 ---
 
