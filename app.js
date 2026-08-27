@@ -133,15 +133,93 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Copy BibTeX Citation
+  // 5. BibTeX Citations Dictionary
+  const bibtexCitations = {
+    btnCopyBibtex1: [
+      '@article{vazquez2025strategy,',
+      '  title={From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?},',
+      '  author={V{\\\'a}zquez-Pacho, Mariana Guadalupe and Payaud, Marielle A.},',
+      '  journal={Journal of Strategy and Management},',
+      '  volume={18},',
+      '  number={1},',
+      '  pages={123--147},',
+      '  year={2025},',
+      '  publisher={Emerald Publishing Limited},',
+      '  doi={10.1108/JSMA-06-2023-0145}',
+      '}'
+    ].join('\n'),
+
+    btnCopyBibtex2: [
+      '@incollection{vazquez2025blended,',
+      '  title={Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV) and Bottom of the Pyramid (BoP) Concepts: What Are the Differences? A Comparative Analysis Using Morse\'s Methodology},',
+      '  author={V{\\\'a}zquez-Pacho, Mariana and Payaud, Marielle A.},',
+      '  booktitle={Values in Contemporary International Business},',
+      '  pages={94--129},',
+      '  year={2025},',
+      '  publisher={Routledge}',
+      '}'
+    ].join('\n'),
+
+    btnCopyBibtex3: [
+      '@incollection{vazquezpacho2023proposition,',
+      '  title={Proposition de valeur mixte, triple bilan, cr{\\\'e}ation de valeur partag{\\\'e}e, et base de la pyramide, quelles diff{\\\'e}rences ? Une analyse comparative avec la m{\\\'e}thodologie de Morse},',
+      '  author={V{\\\'a}zquez-Pacho, Mariana and Payaud, Marielle A.},',
+      '  booktitle={Management international et valeurs},',
+      '  editor={Goxe, Fran{\\c{c}}ois and Viegas-Pires, Micha{\\"e}l},',
+      '  pages={115--156},',
+      '  year={2023},',
+      '  publisher={Vuibert}',
+      '}'
+    ].join('\n'),
+
+    btnCopyBibtex4: [
+      '@phdthesis{vazquezpacho2024these,',
+      '  title={L\'organisation interne et externe des mod{\\`e}les d\'affaires des FMN pour la cr{\\\'e}ation de valeur mutuelle},',
+      '  author={V{\\\'a}zquez-Pacho, Mariana Guadalupe},',
+      '  year={2024},',
+      '  school={Universit{\\\'e} Jean Moulin Lyon 3}',
+      '}'
+    ].join('\n')
+  };
+
+  // Robust Clipboard Copy Helper (works on HTTPS, localhost, file://)
+  async function copyTextToClipboard(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch (e) {
+        console.warn('navigator.clipboard failed, trying execCommand fallback', e);
+      }
+    }
+    const textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    try {
+      const successful = document.execCommand('copy');
+      textArea.remove();
+      return successful;
+    } catch (err) {
+      console.error('Fallback execCommand failed:', err);
+      textArea.remove();
+      return false;
+    }
+  }
+
+  // Copy BibTeX Citation
   const citationButtons = document.querySelectorAll('.btn-citation');
   citationButtons.forEach(btn => {
     btn.addEventListener('click', async () => {
-      const citationText = btn.getAttribute('data-citation');
+      const citationText = (bibtexCitations && bibtexCitations[btn.id]) || btn.getAttribute('data-citation');
       if (!citationText) return;
 
-      try {
-        await navigator.clipboard.writeText(citationText);
+      const success = await copyTextToClipboard(citationText);
+      if (success) {
         const indicator = btn.parentElement.querySelector('.copied-indicator');
         if (indicator) {
           indicator.classList.add('visible');
@@ -151,8 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const isEn = htmlElement.getAttribute('lang') === 'en';
         showToast(isEn ? 'BibTeX citation copied to clipboard!' : '¡Cita BibTeX copiada al portapapeles!');
-      } catch (err) {
-        console.error('Error copying text:', err);
       }
     });
   });
@@ -164,8 +240,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (btnCopyEmail) {
     btnCopyEmail.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(emailText);
+      const success = await copyTextToClipboard(emailText);
+      if (success) {
         if (copiedEmailTag) {
           copiedEmailTag.classList.add('visible');
           setTimeout(() => {
@@ -174,8 +250,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const isEn = htmlElement.getAttribute('lang') === 'en';
         showToast(isEn ? 'Email copied to clipboard!' : '¡Email copiado al portapapeles!');
-      } catch (err) {
-        console.error('Error copying email:', err);
       }
     });
   }

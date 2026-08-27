@@ -128,8 +128,10 @@ const translations = {
 
     btnCopyBibtex: "Copiar Cita (BibTeX)",
     copiedText: "¡Copiado!",
-    btnViewArticle: "Ver Publicación (DOI)",
+    btnViewArticle: "Ver Publicación (Emerald)",
+    btnViewChapterRoutledge: "Ver Capítulo (Routledge)",
     btnViewBookRoutledge: "Ver Libro (Routledge)",
+    btnViewBookVuibert: "Ver Libro (Vuibert)",
     btnViewRg: "Ver en ResearchGate",
     btnViewThesis: "Ver Registro Theses.fr",
 
@@ -345,8 +347,10 @@ const translations = {
 
     btnCopyBibtex: "Copy Citation (BibTeX)",
     copiedText: "Copied!",
-    btnViewArticle: "View Publication (DOI)",
+    btnViewArticle: "View Publication (Emerald)",
+    btnViewChapterRoutledge: "View Chapter (Routledge)",
     btnViewBookRoutledge: "View Book (Routledge)",
+    btnViewBookVuibert: "View Book (Vuibert)",
     btnViewRg: "View on ResearchGate",
     btnViewThesis: "View on Theses.fr",
 

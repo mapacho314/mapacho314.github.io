@@ -21,16 +21,16 @@ Acts as a high-impact *sparring partner* for enterprise clients, translating com
 ## 🔬 Key Publications & Scientific Production
 
 1. **Journal Article (Scopus / Q1)**
-   > **Vázquez-Pacho, M.G.** & Payaud, M.A. (2024 / 2025). *"From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?"*, **Journal of Strategy and Management**, Vol. 18 No. 1, pp. 123–147.  
-   > 🔗 [DOI: 10.1108/JSMA-06-2023-0145](https://doi.org/10.1108/JSMA-06-2023-0145)
+   > **Vázquez-Pacho, M.G.** & Payaud, M.A. (2025). *"From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?"*, **Journal of Strategy and Management**, Vol. 18 No. 1, pp. 123–147.  
+   > 🔗 [Emerald Insight / DOI: 10.1108/JSMA-06-2023-0145](https://www.emerald.com/jsma/article-abstract/18/1/123/1240603/From-strategy-to-impact-how-MNCs-innovate-their?redirectedFrom=fulltext)
 
 2. **Book Chapter (Routledge)**
-   > **Vázquez-Pacho, M.** & Payaud, M.A. (2025). *"Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV), and Base of Pyramid (BOP) Concepts: What Are the Differences? A Comparative Analysis Using Morse's Methodology"*. In **Values in Contemporary International Business** (Chapter 5). Routledge (Taylor & Francis Group).  
-   > 🔗 [Publisher Link](https://www.taylorfrancis.com/books/edit/10.4324/9781003487319/values-contemporary-international-business)
+   > **Vázquez-Pacho, M.** & Payaud, M.A. (2025). *"Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV), and Base of Pyramid (BOP) Concepts: What Are the Differences? A Comparative Analysis Using Morse's Methodology"*. In **Values in Contemporary International Business** (pp. 94–129). Routledge (Taylor & Francis Group).  
+   > 🔗 [Routledge Chapter Link](https://www.taylorfrancis.com/chapters/edit/10.4324/9781003541905-8/blended-value-proposition-bvp-triple-bottom-line-tbl-creating-shared-value-csv-bottom-pyramid-bop-concepts-mariana-v%C3%A1zquez-pacho-marielle-payaud)
 
 3. **Book Chapter (Vuibert / Atlas AFMI)**
    > **Vázquez-Pacho, M.** & Payaud, M.A. (2023). *"Proposition de valeur mixte, triple bilan, création de valeur partagée, et base de la pyramide, quelles différences ? Une analyse comparative avec la méthodologie de Morse"*. In F. Goxe & M. Viegas-Pires (Eds.), **Management international et valeurs** (pp. 115–156). Vuibert.  
-   > 🔗 [ResearchGate Record](https://www.researchgate.net/publication/371661633_Proposition_de_valeur_mixte_triple_bilan_creation_de_valeur_partagee_et_base_de_la_pyramide_quelles_differences_Une_analyse_comparative_avec_la_methodologie_de_Morse)
+   > 🔗 [Vuibert Publisher Link](https://www.vuibert.fr/livre/9782311412734-management-international-et-valeurs)
 
 4. **Doctoral Dissertation (Université Jean Moulin Lyon 3)**
    > **Vázquez-Pacho, M.G.** (2024). *"L'organisation interne et externe des modèles d'affaires des FMN pour la création de valeur mutuelle"* (*The internal and external organization of MNCs' business models for mutual value creation*). Defended April 2024.  
