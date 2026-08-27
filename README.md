@@ -55,7 +55,7 @@ Acts as a high-impact *sparring partner* for enterprise clients, translating com
 - **Master in Global Marketing & Negotiation** — Burgundy School of Business, France (2017)
 - **Maestría en Dirección de Mercadotecnia** — Universidad Autónoma de Yucatán, Mexico (2017)
 - **Licenciatura en Contaduría Pública** (*Graduated with Honors ⭐*) — Universidad Autónoma de Yucatán, Mexico (2009)
-- **Executive Diplomas in Business Administration & Management** — UNAM, Mexico (2014)
+- **Executive Diploma in Business Administration & Management** — UNAM, Mexico (2014)
 
 ---
 

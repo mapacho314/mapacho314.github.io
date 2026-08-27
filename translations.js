@@ -17,6 +17,7 @@ const translations = {
     navPublications: "Investigación",
     navSkills: "Competencias",
     navEducation: "Educación",
+    navContact: "Contacto",
     btnDownloadCv: "Descargar CV",
     langToggleTitle: "Switch to English",
 
@@ -194,7 +195,7 @@ const translations = {
     eduMasterInst: "Universidad Autónoma de Yucatán (México)",
     eduMasterFocus: "Dirección estratégica comercial, comportamiento del consumidor y desarrollo de canales.",
 
-    eduUnamTitle: "Diplomados en Administración y Gestión de Empresas",
+    eduUnamTitle: "Diplomado en Administración y Gestión de Empresas",
     eduUnamInst: "Universidad Nacional Autónoma de México (UNAM)",
     eduUnamFocus: "Administración corporativa integral, finanzas y desarrollo directivo.",
 
@@ -236,6 +237,7 @@ const translations = {
     navPublications: "Publications",
     navSkills: "Skills",
     navEducation: "Education",
+    navContact: "Contact",
     btnDownloadCv: "Download CV",
     langToggleTitle: "Cambiar a Español",
 
@@ -413,7 +415,7 @@ const translations = {
     eduMasterInst: "Universidad Autónoma de Yucatán (Mexico)",
     eduMasterFocus: "Strategic commercial management, consumer behavior, and distribution channel development.",
 
-    eduUnamTitle: "Executive Diplomas in Business Administration & Management",
+    eduUnamTitle: "Executive Diploma in Business Administration & Management",
     eduUnamInst: "Universidad Nacional Autónoma de México (UNAM)",
     eduUnamFocus: "Comprehensive corporate administration, managerial finance, and executive leadership.",
 

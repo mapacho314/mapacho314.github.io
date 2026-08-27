@@ -254,7 +254,71 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 7. Toast Notification Utility
+  // 7. Mobile Navigation Drawer Toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  function closeMobileMenu() {
+    if (mobileMenuBtn && mobileNavDrawer) {
+      mobileMenuBtn.classList.remove('active');
+      mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      mobileNavDrawer.classList.remove('open');
+    }
+  }
+
+  function toggleMobileMenu() {
+    if (mobileMenuBtn && mobileNavDrawer) {
+      const isOpen = mobileNavDrawer.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        mobileMenuBtn.classList.add('active');
+        mobileMenuBtn.setAttribute('aria-expanded', 'true');
+        mobileNavDrawer.classList.add('open');
+      }
+    }
+  }
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+  }
+
+  // Close mobile drawer when tapping any mobile nav link
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+
+  // Close mobile menu on click outside
+  document.addEventListener('click', (e) => {
+    if (mobileNavDrawer && mobileNavDrawer.classList.contains('open')) {
+      const isInsideNavbar = e.target.closest('#navbar');
+      if (!isInsideNavbar) {
+        closeMobileMenu();
+      }
+    }
+  });
+
+  // Close mobile menu on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileMenu();
+    }
+  });
+
+  // Close mobile menu on window resize if larger than tablet breakpoint
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMobileMenu();
+    }
+  });
+
+  // 8. Toast Notification Utility
   const toast = document.getElementById('toast');
   let toastTimer = null;
 

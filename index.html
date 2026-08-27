@@ -35,6 +35,7 @@
         <span class="brand-name">Mariana Vázquez Pacho<span class="brand-phd">, PhD</span></span>
       </a>
 
+      <!-- Desktop Navigation Menu -->
       <nav class="nav-menu" id="navMenu">
         <a href="#about" class="nav-link" id="navAbout" data-i18n="navProfile">Perfil</a>
         <a href="#pillars" class="nav-link" id="navPillars" data-i18n="navApproach">Enfoque</a>
@@ -42,6 +43,7 @@
         <a href="#publications" class="nav-link" id="navPubs" data-i18n="navPublications">Investigación</a>
         <a href="#skills" class="nav-link" id="navSkills" data-i18n="navSkills">Competencias</a>
         <a href="#education" class="nav-link" id="navEdu" data-i18n="navEducation">Educación</a>
+        <a href="#contact" class="nav-link" id="navContact" data-i18n="navContact">Contacto</a>
       </nav>
 
       <div class="nav-actions">
@@ -56,11 +58,33 @@
           <span class="theme-icon" id="themeIcon">☀️</span>
         </button>
 
-        <a href="Profile.pdf" download class="btn btn-outline btn-sm" id="btnDownloadCvNav">
-          <span data-i18n="btnDownloadCv">Descargar CV</span>
+        <!-- CV Download Button (Responsive: Text on Desktop, Icon-Only on Mobile) -->
+        <a href="Profile.pdf" download class="btn btn-outline btn-sm btn-nav-cv" id="btnDownloadCvNav" title="Descargar CV / Download CV" aria-label="Descargar CV / Download CV">
+          <span class="btn-nav-cv-text" data-i18n="btnDownloadCv">Descargar CV</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
         </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer Overlay -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link" data-i18n="navHome">Inicio</a>
+        <a href="#about" class="mobile-nav-link" data-i18n="navProfile">Perfil</a>
+        <a href="#pillars" class="mobile-nav-link" data-i18n="navApproach">Enfoque</a>
+        <a href="#experience" class="mobile-nav-link" data-i18n="navExperience">Trayectoria</a>
+        <a href="#publications" class="mobile-nav-link" data-i18n="navPublications">Investigación</a>
+        <a href="#skills" class="mobile-nav-link" data-i18n="navSkills">Competencias</a>
+        <a href="#education" class="mobile-nav-link" data-i18n="navEducation">Educación</a>
+        <a href="#contact" class="mobile-nav-link" data-i18n="navContact">Contacto</a>
+      </nav>
     </div>
   </header>
 
@@ -125,15 +149,17 @@
             <span data-i18n="btnHeroCv">Descargar CV Completo (PDF)</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
           </a>
-          <a href="https://www.linkedin.com/in/mariana-vazquez-pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile" id="btnLinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"/></svg>
-          </a>
-          <a href="https://www.researchgate.net/profile/Mariana-Vazquez-Pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="ResearchGate Profile" id="btnResearchGate">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.08.455c-.03.205-.045.388-.045.545 0 .285.038.563.112.833.076.27.18.517.316.742a3.86 3.86 0 0 0 .502.66c.203.21.435.39.697.538-.525.435-1.028.9-1.508 1.395-.48.495-.915 1.02-1.305 1.575a13.3 13.3 0 0 0-1.043 1.688 15.355 15.355 0 0 0-.75 1.748c-.69-.975-1.395-1.89-2.115-2.745-.72-.855-1.463-1.62-2.228-2.295a18.24 18.24 0 0 0-2.43-1.74A12.72 12.72 0 0 0 3.75 6.72c-.885-.3-1.77-.45-2.655-.45H0v17.73h4.35v-6.93h.645l4.89 6.93h5.43l-5.61-7.74c.915-.99 1.83-2.025 2.745-3.105.915-1.08 1.77-2.205 2.565-3.375.465.3.945.555 1.44.765.495.21 1.005.315 1.53.315 1.05 0 1.95-.345 2.7-1.035.75-.69 1.125-1.59 1.125-2.7 0-1.11-.375-2.01-1.125-2.7-.75-.69-1.65-1.035-2.7-1.035zM4.35 13.41H3.6v-3.75h.75c.675 0 1.23.21 1.665.63.435.42.66.96.66 1.62 0 .42-.105.78-.315 1.08-.21.3-.495.54-.855.72-.36.18-.765.27-1.215.27zm15.236-9.525c.345.345.525.765.525 1.26 0 .495-.18.915-.525 1.26-.345.345-.765.525-1.26.525-.495 0-.915-.18-1.26-.525-.345-.345-.525-.765-.525-1.26 0-.495.18-.915.525-1.26.345-.345.765-.525 1.26-.525.495 0 .915.18 1.26.525z"/></svg>
-          </a>
-          <a href="https://github.com/mapacho314" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile" id="btnGitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
-          </a>
+          <div class="hero-social-group">
+            <a href="https://www.linkedin.com/in/mariana-vazquez-pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="LinkedIn Profile" id="btnLinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.9 0-1.63.73-1.63 1.63 0 .9.73 1.63 1.63 1.63.9 0 1.63-.73 1.63-1.63 0-.9-.73-1.63-1.63-1.63Z"/></svg>
+            </a>
+            <a href="https://www.researchgate.net/profile/Mariana-Vazquez-Pacho" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="ResearchGate Profile" id="btnResearchGate">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.08.455c-.03.205-.045.388-.045.545 0 .285.038.563.112.833.076.27.18.517.316.742a3.86 3.86 0 0 0 .502.66c.203.21.435.39.697.538-.525.435-1.028.9-1.508 1.395-.48.495-.915 1.02-1.305 1.575a13.3 13.3 0 0 0-1.043 1.688 15.355 15.355 0 0 0-.75 1.748c-.69-.975-1.395-1.89-2.115-2.745-.72-.855-1.463-1.62-2.228-2.295a18.24 18.24 0 0 0-2.43-1.74A12.72 12.72 0 0 0 3.75 6.72c-.885-.3-1.77-.45-2.655-.45H0v17.73h4.35v-6.93h.645l4.89 6.93h5.43l-5.61-7.74c.915-.99 1.83-2.025 2.745-3.105.915-1.08 1.77-2.205 2.565-3.375.465.3.945.555 1.44.765.495.21 1.005.315 1.53.315 1.05 0 1.95-.345 2.7-1.035.75-.69 1.125-1.59 1.125-2.7 0-1.11-.375-2.01-1.125-2.7-.75-.69-1.65-1.035-2.7-1.035zM4.35 13.41H3.6v-3.75h.75c.675 0 1.23.21 1.665.63.435.42.66.96.66 1.62 0 .42-.105.78-.315 1.08-.21.3-.495.54-.855.72-.36.18-.765.27-1.215.27zm15.236-9.525c.345.345.525.765.525 1.26 0 .495-.18.915-.525 1.26-.345.345-.765.525-1.26.525-.495 0-.915-.18-1.26-.525-.345-.345-.525-.765-.525-1.26 0-.495.18-.915.525-1.26.345-.345.765-.525 1.26-.525.495 0 .915.18 1.26.525z"/></svg>
+            </a>
+            <a href="https://github.com/mapacho314" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub Profile" id="btnGitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -635,7 +661,7 @@
           <!-- UNAM -->
           <div class="edu-card card">
             <div class="edu-year">2014</div>
-            <h3 class="edu-degree" data-i18n="eduUnamTitle">Diplomados en Administración y Gestión de Empresas</h3>
+            <h3 class="edu-degree" data-i18n="eduUnamTitle">Diplomado en Administración y Gestión de Empresas</h3>
             <h4 class="edu-institution" data-i18n="eduUnamInst">Universidad Nacional Autónoma de México (UNAM)</h4>
             <p class="edu-focus" data-i18n="eduUnamFocus">
               Administración corporativa integral, finanzas y desarrollo directivo.
