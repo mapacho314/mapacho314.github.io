@@ -26,6 +26,9 @@
   --accent-emerald-soft: rgba(16, 185, 129, 0.12);
   --accent-purple: #a855f7;
 
+  /* Stock gradient: blue fades through a neutral slate, then gold. No muddy mid-tones. */
+  --brand-gradient: linear-gradient(180deg, var(--brand-blue) 0%, rgba(148, 163, 184, 0.28) 50%, var(--brand-gold) 100%);
+
   /* Typography */
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: 'Space Grotesk', var(--font-sans);
@@ -600,7 +603,7 @@ body {
   left: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(180deg, var(--brand-blue), var(--brand-gold));
+  background: var(--brand-gradient);
 }
 
 .summary-text {
