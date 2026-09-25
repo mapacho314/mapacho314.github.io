@@ -203,6 +203,11 @@ const translations = {
     eduBachelorInst: "Universidad Autónoma de Yucatán (México)",
     eduBachelorFocus: "Fundamentos rigurosos de finanzas corporativas, costos, presupuestación y auditoría.",
 
+    eduCourseBadge: "Certificado Verificado ✅",
+    eduCourseTitle: "Quantitative Research Methods: Tools for Data Analysis",
+    eduCourseInst: "Coursera · Starweaver",
+    eduCourseFocus: "Métodos de investigación cuantitativa aplicados al análisis de datos: diseño de estudio, estadística y herramientas de análisis.",
+
     langTitle: "🌐 Idiomas",
     langEs: "<strong>Español:</strong> Nativo",
     langEn: "<strong>Inglés:</strong> Avanzado / Profesional Completo (TOEIC 915)",
@@ -422,6 +427,11 @@ const translations = {
     eduBachelorTitle: "Bachelor of Accountancy",
     eduBachelorInst: "Universidad Autónoma de Yucatán (Mexico)",
     eduBachelorFocus: "Rigorous foundations in corporate finance, managerial cost accounting, budgeting, and auditing.",
+
+    eduCourseBadge: "Verified Certificate ✅",
+    eduCourseTitle: "Quantitative Research Methods: Tools for Data Analysis",
+    eduCourseInst: "Coursera · Starweaver",
+    eduCourseFocus: "Quantitative research methods applied to data analysis: study design, statistics, and analysis tooling for evidence-based decision-making.",
 
     langTitle: "🌐 Languages",
     langEs: "<strong>Spanish:</strong> Native Proficiency",
