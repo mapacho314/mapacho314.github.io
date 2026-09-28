@@ -1073,6 +1073,22 @@ a.honor-badge:hover {
   border-color: rgba(251, 191, 36, 0.45);
 }
 
+/* Licenses & Certifications */
+.cert-section {
+  margin-bottom: 1.75rem;
+}
+
+.cert-section-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.cert-section .edu-grid {
+  margin-bottom: 0;
+}
+
 .edu-degree {
   font-size: 1.18rem;
   font-weight: 700;

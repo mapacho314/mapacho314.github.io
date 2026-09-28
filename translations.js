@@ -208,6 +208,11 @@ const translations = {
     eduCourseInst: "Coursera · Starweaver",
     eduCourseFocus: "Métodos de investigación cuantitativa aplicados al análisis de datos: diseño de estudio, estadística y herramientas de análisis.",
 
+    certSectionTitle: "📜 Licencias y Certificaciones",
+    eduCourse2Title: "Strategy and Sustainability",
+    eduCourse2Inst: "IESE Business School · Coursera",
+    eduCourse2Focus: "Estrategia competitiva y sostenibilidad corporativa: creación de valor a largo plazo, ventaja competitiva y modelos de negocio responsables.",
+
     langTitle: "🌐 Idiomas",
     langEs: "<strong>Español:</strong> Nativo",
     langEn: "<strong>Inglés:</strong> Avanzado / Profesional Completo (TOEIC 915)",
@@ -432,6 +437,11 @@ const translations = {
     eduCourseTitle: "Quantitative Research Methods: Tools for Data Analysis",
     eduCourseInst: "Coursera · Starweaver",
     eduCourseFocus: "Quantitative research methods applied to data analysis: study design, statistics, and analysis tooling for evidence-based decision-making.",
+
+    certSectionTitle: "📜 Licenses & Certifications",
+    eduCourse2Title: "Strategy and Sustainability",
+    eduCourse2Inst: "IESE Business School · Coursera",
+    eduCourse2Focus: "Competitive strategy and corporate sustainability: long-term value creation, competitive advantage, and responsible business models.",
 
     langTitle: "🌐 Languages",
     langEs: "<strong>Spanish:</strong> Native Proficiency",
