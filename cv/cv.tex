@@ -1,0 +1,163 @@
+%----------------------------------------------------------------------------------------
+%  Dr. Mariana Guadalupe Vazquez Pacho -- ATS-optimised CV
+%
+%  Design rules (Applicant Tracking System friendly):
+%    * single column, no tables, no text boxes, no columns, no images, no icons
+%    * standard fonts, standard section headings, real selectable text
+%    * Unicode mapping enabled so copy/paste and parsing extract clean text
+%    * left-aligned (ragged-right) body to avoid hyphenation artefacts
+%
+%  Build:  pdflatex -interaction=nonstopmode -halt-on-error cv/cv.tex
+%----------------------------------------------------------------------------------------
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{parskip}
+\setlength{\parskip}{0.3em}
+\usepackage[hidelinks]{hyperref}
+
+% Clean Unicode mapping for ATS text extraction
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Body: no hyphenation, left aligned, no paragraph indent
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\raggedright
+\setlength{\parindent}{0pt}
+
+% Section heading: bold upper-case with a thin rule underneath
+\newcommand{\cvsection}[1]{%
+  \vspace{0.6em}%
+  {\large\bfseries #1}\par
+  \vspace{-0.45em}%
+  \rule{\textwidth}{0.6pt}\par
+  \vspace{0.25em}%
+}
+
+% Job entry:  {Title}{Dates}{Organisation}{Location}
+\newcommand{\job}[4]{%
+  \vspace{0.3em}%
+  \noindent\textbf{#1}\hfill #2\\[0.08em]
+  \textit{#3}\hfill \textit{#4}\par
+  \vspace{0.05em}%
+}
+
+% Education entry: {Degree}{Institution}{Year}
+\newcommand{\edu}[3]{%
+  \noindent\textbf{#1}\hfill #3\\[0.1em]
+  \textit{#2}\par
+  \vspace{0.25em}%
+}
+
+\setlist[itemize]{leftmargin=1.3em, topsep=0.1em, itemsep=0.02em, parsep=0pt, partopsep=0pt}
+\setlist[enumerate]{leftmargin=1.5em, topsep=0.1em, itemsep=0.1em, parsep=0pt, partopsep=0pt}
+
+\pagestyle{empty}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%  HEADER
+%----------------------------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries MARIANA GUADALUPE V\'AZQUEZ PACHO}\\[0.4em]
+  {\large PhD in Management | Strategy \& Sustainability | ESG Business Models | FMCG Leadership}\\[0.5em]
+  {\small Colombia (Global Reach: Mexico / France) | +57 322 4299154 | \href{mailto:mariana.vazquezpacho@gmail.com}{mariana.vazquezpacho@gmail.com}}\\[0.15em]
+  {\small \href{https://www.linkedin.com/in/mariana-vazquez-pacho}{linkedin.com/in/mariana-vazquez-pacho} | \href{https://www.researchgate.net/profile/Mariana-Vazquez-Pacho}{researchgate.net/profile/Mariana-Vazquez-Pacho} | \href{https://mapacho314.github.io}{mapacho314.github.io}}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%  PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\cvsection{PROFESSIONAL SUMMARY}
+Ph.D. in Management Sciences with a background in Public Accounting and International Marketing, and 12+ years of combined experience: 7 years of commercial leadership in multinational FMCG companies (Mondelez International, Grupo Bimbo, Bepensa) and 5 years of scientific research in Lyon, France. Specialised in integrating sustainability frameworks (ESG / SDGs) and shared value creation into profitable, scalable business models. Proven record in key account management, sell-in / sell-out growth, promotional ROI optimisation and strategic advisory across multicultural teams (Spanish, English, French).
+
+%----------------------------------------------------------------------------------------
+%  CORE COMPETENCIES
+%----------------------------------------------------------------------------------------
+\cvsection{CORE COMPETENCIES}
+\begin{itemize}
+  \item \textbf{Sustainability \& Governance:} ESG, Sustainable Development Goals (SDGs), Sustainable \& Hybrid Business Models, Base of the Pyramid (BoP), Shared Value Creation, Triple Bottom Line (TBL), Stakeholder Engagement, Sustainable Innovation Thinking.
+  \item \textbf{Strategy \& Commercial Leadership:} Corporate Strategic Planning, Key Account Management (Wholesale / Retail), Sell-in \& Sell-out Growth, Executive Business Case Development, Commercial Negotiation, DSO Control, New Business Development, B2B Sales, Budgeting \& Promotional ROI Optimisation.
+  \item \textbf{Research \& Analytics:} Agile Market Research, Qualitative \& Comparative Analysis (Morse's methodology), Supply Chain \& Value Network Mapping, Public Accounting, Costing \& Financial Analysis, Foresight \& Trend Analysis, Data-Driven Decision Making.
+  \item \textbf{Software \& Platforms:} Power BI, NVivo, SPSS, SAS Viya, Salesforce CRM, Nielsen Analytics, ISCAM, EBSCOhost, MarketLine, Advanced Microsoft Office Suite.
+  \item \textbf{Languages:} Spanish (Native proficiency), English (Advanced / Full Professional proficiency, TOEIC 915), French (Advanced / Professional working proficiency).
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%  PROFESSIONAL EXPERIENCE
+%----------------------------------------------------------------------------------------
+\cvsection{PROFESSIONAL EXPERIENCE}
+
+\job{PhD Researcher --- Strategy \& Sustainability}{January 2019 -- April 2024}{Magellan Laboratory, Universit\'e Jean Moulin Lyon 3}{Lyon, France}
+\begin{itemize}
+  \item Led doctoral research on sustainability, business model design and innovation, helping organisations profitably create sustainable and social value in emerging markets and Base of the Pyramid (BoP) contexts.
+  \item Operationalised business model frameworks --- value proposition, supply chain, value network, customer segments, revenue streams, cost structure and key activities --- across multinational corporations (MNCs).
+  \item Conducted qualitative and comparative data analysis (Morse's methodology) to identify how MNCs innovate and create shared value in line with global sustainability trends.
+  \item Explored collaborative frameworks for optimising value chains through partnerships with NGOs, civil society organisations and governments.
+  \item Presented findings at international scientific conferences; results published in a Scopus Q1 journal and two edited academic books.
+\end{itemize}
+
+\job{Key Account Executive (Wholesale Channel)}{September 2017 -- December 2018}{Mondelez International}{M\'erida, Mexico}
+\begin{itemize}
+  \item Led strategic planning and relationship management for two key clients in South Mexico's wholesale channel, using market, consumer and competitive insights to drive business growth.
+  \item Consistently exceeded sales targets, growing sell-in and sell-out by 10\% and surpassing quota in 10 out of 12 months.
+  \item Built and maintained strong stakeholder relationships, generating critical insights that improved strategic decision-making.
+  \item Championed the launch of 12+ new products annually, tailoring the portfolio to evolving market demand.
+  \item Developed business cases for commercial solutions, securing client adoption and improving sales performance.
+\end{itemize}
+
+\job{Sales Manager (South of Mexico \& Central America)}{September 2016 -- January 2017}{MegaEmpack (Bepensa Industrial)}{M\'erida, Mexico}
+\begin{itemize}
+  \item Led business development across diverse territories, designing and executing growth strategies responsive to regional market trends.
+  \item Delivered 20\% sales growth through strategies grounded in market data and analytics, consistently exceeding targets.
+  \item Recovered key clients and established new SME accounts, driving significant revenue growth.
+  \item Coordinated cross-functional teams to deliver technical client requests and resolve business challenges.
+\end{itemize}
+
+\job{Key Account Executive (Retail / Supermarkets)}{November 2010 -- August 2015}{Grupo Bimbo}{Mexico City, Mexico}
+\begin{itemize}
+  \item Managed the portfolios of two principal retail chains in Mexico, delivering growth in revenue and profit.
+  \item Drove a consistent annual growth rate of approximately 12\% per retailer by optimising distribution costs, promotional campaigns and shelf visibility.
+  \item Managed promotional budgets with a strong ROI focus, using data-driven insights to keep campaigns innovative and profitable.
+  \item Built and delivered annual Joint Business Plans (JBP); negotiated commercial discounts and introduced cross-docking logistics to reduce costs.
+  \item Ensured strict DSO compliance with finance and coordinated interdisciplinary teams for tailored product adaptations.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%  EDUCATION
+%----------------------------------------------------------------------------------------
+\cvsection{EDUCATION}
+
+\edu{PhD in Management (Strategy \& Sustainability)}{Universit\'e Jean Moulin Lyon 3, Magellan Research Center --- France}{2019 -- 2024}
+\edu{Master in Global Marketing \& Negotiation}{Burgundy School of Business --- France}{2017}
+\edu{Master in Marketing Management}{Universidad Aut\'onoma de Yucat\'an --- Mexico}{2017}
+\edu{Executive Diploma in Business Administration \& Management}{Universidad Nacional Aut\'onoma de M\'exico (UNAM) --- Mexico}{2014}
+\edu{Bachelor of Accountancy (Graduated with Honours)}{Universidad Aut\'onoma de Yucat\'an --- Mexico}{2009}
+
+%----------------------------------------------------------------------------------------
+%  LICENSES & CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\cvsection{LICENSES \& CERTIFICATIONS}
+\begin{itemize}
+  \item \textbf{Quantitative Research Methods: Tools for Data Analysis} --- Coursera (Starweaver), 2026. Credential: coursera.org/verify/8GNN97UFJ2WO.
+  \item \textbf{Strategy and Sustainability} --- IESE Business School (Coursera), 2025. Credential: coursera.org/verify/HAEEHHDZXA9G.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%  PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\cvsection{PUBLICATIONS}
+\begin{enumerate}
+  \item V\'azquez-Pacho, M.G. \& Payaud, M.A. (2025). ``From strategy to impact: how MNCs innovate their business models for social value in BoP contexts?'' \textit{Journal of Strategy and Management}, Vol. 18, No. 1, pp. 123--147. Emerald Publishing. DOI: 10.1108/JSMA-06-2023-0145. Peer-reviewed journal article (Scopus / Q1).
+  \item V\'azquez-Pacho, M. \& Payaud, M.A. (2025). ``Blended Value Proposition (BVP), Triple Bottom Line (TBL), Creating Shared Value (CSV), and Base of Pyramid (BOP) Concepts: What Are the Differences? A Comparative Analysis Using Morse's Methodology.'' In \textit{Values in Contemporary International Business} (pp. 94--129). Routledge. Book chapter.
+  \item V\'azquez-Pacho, M. \& Payaud, M.A. (2023). ``Proposition de valeur mixte, triple bilan, cr\'eation de valeur partag\'ee, et base de la pyramide, quelles diff\'erences? Une analyse comparative avec la m\'ethodologie de Morse.'' In F. Goxe \& M. Viegas-Pires (Eds.), \textit{Management international et valeurs} (pp. 115--156). Vuibert. Book chapter.
+  \item V\'azquez-Pacho, M.G. (2024). ``L'organisation interne et externe des mod\`eles d'affaires des FMN pour la cr\'eation de valeur mutuelle.'' Doctoral dissertation, Universit\'e Jean Moulin Lyon 3. theses.fr/2024LYO30016.
+\end{enumerate}
+
+\end{document}

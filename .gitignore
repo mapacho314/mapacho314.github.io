@@ -1,6 +1,13 @@
 # Private / Local source documents
 untracked/
 
+# LaTeX CV build artifacts (source is cv/cv.tex; root Profile.pdf is the deliverable)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
+cv/*_extracted.txt
+
 # OS metadata
 .DS_Store
 Thumbs.db
